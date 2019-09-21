@@ -19,12 +19,14 @@ FLAGS = set([FLAG_LSA])
 # Number of required arguments
 REQUIRED_ARGS = ["word_list"]
 OPTIONAL_ARGS = {
-    'g': "graph_edgelist"
 }
 
+############################################
+# PARSING CMD LINE STUFF - no need to edit #
+############################################
 NUM_REQUIRED_ARGS = len(REQUIRED_ARGS) + 1
 # --> [executable name, word list file name]
-args = argv[:NUM_REQUIRED_ARGS]
+args = []
 
 # Flags/Optional Arguments
 flags = set()
@@ -45,12 +47,8 @@ def print_usage():
         print(' ]', end='')
     print('')
 
-if (argc < 2):
-    print_usage()
-    exit()
-
 # We scan through command line arguments and place them into the correct types
-arg_i = NUM_REQUIRED_ARGS
+arg_i = 0
 while (arg_i < argc):
     if ('-' == argv[arg_i][0]):
         flag = argv[arg_i][1:]
@@ -67,6 +65,13 @@ while (arg_i < argc):
         args.append(argv[arg_i])
     arg_i += 1
 
+if (len(args) < NUM_REQUIRED_ARGS):
+    print_usage()
+    exit()
+#############################################################################
+# END OF PARSING - arguments in: args, optional_args, undefined_args, flags #
+#############################################################################
+
 # word pair .csv file
 WORD_FILE = args[1]
 # graph file with (from, to) word pairs representing an edge of distance 1 in graph
@@ -75,7 +80,7 @@ GRAPH_FILE = optional_args['g']
 ############################
 # READ WORD LIST FROM FILE #
 ############################
-init_t = time.time()
+word_t = time.time()
 word_list = []
 with open(WORD_FILE, 'r') as fin:
     for line in fin:
@@ -95,7 +100,7 @@ with open(WORD_FILE, 'r') as fin:
                 word_list.append((prime, extra))
         word_list.append((prime, target))
 
-debug_time("Finished extracting word pairs...", init_t, time.time())
+debug_time("Finished extracting word pairs...", word_t, time.time())
 
 ###################
 # WRITE WORD LIST #
@@ -114,24 +119,3 @@ with open(OUTPUT_FILTERED_WORDS, 'w+') as fout:
             fout.write("{} {}\n".format(prime, target))
 
 debug_time("Finished printing word pairs...", write_t, time.time())
-
-#############################
-# LOAD GRAPH (if available) #
-#############################
-graph = None
-if (GRAPH_FILE is not None):
-    # Load graph from file
-    graph = dict()
-    graph_t = time.time()
-    print("Loading graph from file: " + GRAPH_FILE, file=sys.stderr)
-
-    debug_time("Graph Loaded...", graph_t, time.time())
-
-#########################
-# SEARCH GRAPH FOR PATH #
-#########################
-if (graph is not None):
-    search_t = time.time()
-    word_paths = {pair: -1 for pair in word_list}
-
-    debug_time("Paths found...", search_t, time.time())

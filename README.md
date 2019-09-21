@@ -10,4 +10,4 @@ Use `filter_graph.py` and supply with some raw data file in `prime \t target \t 
 
 ## Searching for paths
 
-Use `search_graph.py` and supply filtered word list and .graph file to generate paths for each word pair. Graph is loaded into memory and bi-directional bfs is run with memoization to search for paths.
+Use `search_graph.py` and supply filtered word list and .graph file to generate paths for each word pair. Graph is loaded into memory and a bfs is run with memoization to search for paths.
