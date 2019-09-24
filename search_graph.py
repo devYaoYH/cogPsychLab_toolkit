@@ -103,7 +103,7 @@ def bfs(graph, source, destination):
         return None
     if (destination not in graph_word_list):
         # print("ERROR word not found in graph: {}".format(destination, file=sys.stderr))
-        unrecognized_word_list.add(source)
+        unrecognized_word_list.add(destination)
         return None
     try:
         return graph_memoization[source][destination]
@@ -186,7 +186,7 @@ with open(OUTPUT_PATH_ERROR_FILE, 'w+') as fout:
 with open(OUTPUT_PATH_FILE, 'w+') as fout:
     for pair in word_list:
         if (word_paths[pair] is not None):
-            fout.write("{},{},{},\"".format(len(word_paths[pair]), pair[0], pair[1]))
+            fout.write("{},{},{},\"".format(len(word_paths[pair])-1, pair[0], pair[1]))
             for node in word_paths[pair][:-1]:
                 fout.write("{},".format(node))
             fout.write("{}".format(word_paths[pair][-1]))

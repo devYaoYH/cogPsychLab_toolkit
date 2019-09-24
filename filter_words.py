@@ -13,10 +13,11 @@ argc = len(sys.argv)
 argv = sys.argv
 
 # List of cmdline flag variables
-FLAGS = set([])
+FLAG_LSA = "lsa"
+FLAGS = set([FLAG_LSA])
 
 # Number of required arguments
-REQUIRED_ARGS = ["raw_graph_data", "output_graph.graph"]
+REQUIRED_ARGS = ["word_list"]
 OPTIONAL_ARGS = {
 }
 
@@ -71,30 +72,48 @@ if (len(args) < NUM_REQUIRED_ARGS):
 # END OF PARSING - arguments in: args, optional_args, undefined_args, flags #
 #############################################################################
 
-INPUT_FILE = args[1]
-OUTPUT_FILE = args[2]
+# word pair .csv file
+WORD_FILE = args[1]
 
-alpha_set = set(list("ABCDEFGHIJKLMNOPQRSTUVWXYZ"))
+############################
+# READ WORD LIST FROM FILE #
+############################
+word_t = time.time()
+word_list = []
+with open(WORD_FILE, 'r') as fin:
+    for line in fin:
+        prime = ""
+        target = ""
+        for i, c in enumerate(line):
+            if (c == ','):
+                prime = line[:i].lower().strip().strip('\"')
+                target = line[i+1:].lower().strip().strip('\"')
+                break
+        # Use regex to extract words within brackets
+        bracket_list = re.search("\(.*\)", target)
+        if (bracket_list is not None):
+            target = target[:bracket_list.span()[0]]
+            extras = [s.strip() for s in bracket_list.group()[1:-1].split(',')]
+            for extra in extras:
+                word_list.append((prime, extra))
+        word_list.append((prime, target))
 
-filter_t = time.time()
-with open(OUTPUT_FILE, 'w+') as fout:
-    with open(INPUT_FILE, 'r') as fin:
-        for line in fin:
-            line_data = line.split()
-            prime = line_data[0]
-            length = -1
-            try:
-                length = int(float(line_data[-1]))
-            except:
-                # Improperly formatted float encountered
-                # print("FLOAT ERROR line: {}".format(line), file=sys.stderr)
-                continue
-            target = ' '.join(line_data[1:-1])
-            if (length == 1):
-                fout.write("{} {}\n".format(prime, target))
-                fout.flush()
-            if (prime[0] in alpha_set):
-                print("Scanning...[{}]".format(prime[0]), file=sys.stderr)
-                alpha_set.remove(prime[0])
+debug_time("Finished extracting word pairs...", word_t, time.time())
 
-debug_time("Extracted graph 1-length edges...", filter_t, time.time())
+###################
+# WRITE WORD LIST #
+###################
+write_t = time.time()
+# Write our filtered pairs to file
+OUTPUT_FILTERED_WORDS = "{}_{}.txt".format(''.join(WORD_FILE.split('.')[:-1]), "filtered" if FLAG_LSA not in flags else "lsa")
+print("Writing to:", OUTPUT_FILTERED_WORDS, file=sys.stderr)
+with open(OUTPUT_FILTERED_WORDS, 'w+') as fout:
+    if (FLAG_LSA in flags):
+        # Output word list for LSA cosines web interface
+        for prime, target in word_list:
+            fout.write("{}\n\n{}\n\n".format(prime, target))
+    else:
+        for prime, target in word_list:
+            fout.write("{} {}\n".format(prime, target))
+
+debug_time("Finished printing word pairs...", write_t, time.time())

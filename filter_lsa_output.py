@@ -13,11 +13,10 @@ argc = len(sys.argv)
 argv = sys.argv
 
 # List of cmdline flag variables
-FLAG_LSA = "lsa"
-FLAGS = set([FLAG_LSA])
+FLAGS = set([])
 
 # Number of required arguments
-REQUIRED_ARGS = ["word_list"]
+REQUIRED_ARGS = ["lsa_output_file", "output.csv"]
 OPTIONAL_ARGS = {
 }
 
@@ -72,50 +71,19 @@ if (len(args) < NUM_REQUIRED_ARGS):
 # END OF PARSING - arguments in: args, optional_args, undefined_args, flags #
 #############################################################################
 
-# word pair .csv file
-WORD_FILE = args[1]
-# graph file with (from, to) word pairs representing an edge of distance 1 in graph
-GRAPH_FILE = optional_args['g']
+INPUT_FILE = args[1]
+OUTPUT_FILE = args[2]
 
-############################
-# READ WORD LIST FROM FILE #
-############################
-word_t = time.time()
-word_list = []
-with open(WORD_FILE, 'r') as fin:
-    for line in fin:
-        prime = ""
-        target = ""
-        for i, c in enumerate(line):
-            if (c == ','):
-                prime = line[:i].lower().strip().strip('\"')
-                target = line[i+1:].lower().strip().strip('\"')
-                break
-        # Use regex to extract words within brackets
-        bracket_list = re.search("\(.*\)", target)
-        if (bracket_list is not None):
-            target = target[:bracket_list.span()[0]]
-            extras = [s.strip() for s in bracket_list.group()[1:-1].split(',')]
-            for extra in extras:
-                word_list.append((prime, extra))
-        word_list.append((prime, target))
-
-debug_time("Finished extracting word pairs...", word_t, time.time())
-
-###################
-# WRITE WORD LIST #
-###################
-write_t = time.time()
-# Write our filtered pairs to file
-OUTPUT_FILTERED_WORDS = "{}_{}.txt".format(''.join(WORD_FILE.split('.')[:-1]), "filtered" if FLAG_LSA not in flags else "lsa")
-print("Writing to:", OUTPUT_FILTERED_WORDS, file=sys.stderr)
-with open(OUTPUT_FILTERED_WORDS, 'w+') as fout:
-    if (FLAG_LSA in flags):
-        # Output word list for LSA cosines web interface
-        for prime, target in word_list:
-            fout.write("{}\n\n{}\n\n".format(prime, target))
-    else:
-        for prime, target in word_list:
-            fout.write("{} {}\n".format(prime, target))
-
-debug_time("Finished printing word pairs...", write_t, time.time())
+with open(OUTPUT_FILE, 'w+') as fout:
+    with open(INPUT_FILE, 'r') as fin:
+        # Ignore first 2 lines
+        fin.readline()
+        fin.readline()
+        for line in fin:
+            target = " ".join(line.split()[1:])
+            second_line = fin.readline().split()
+            prime = " ".join(second_line[:-1])
+            cosine = float(second_line[-1])
+            # Extract relevant information into output file
+            fout.write("{},{},{}\n".format(prime, target, cosine))
+            fout.flush()

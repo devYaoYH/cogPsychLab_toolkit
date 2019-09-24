@@ -2,7 +2,7 @@
 
 ## Filtering Word-Pairs
 
-Use `filter_paths.py` and supply required arguments to generate list of \<prime, target\> pair queries from .csv file. Optional `-lsa` flag generates word pairs in correct formatting for lsa web input (extraction of cosines).
+Use `filter_words.py` and supply required arguments to generate list of \<prime, target\> pair queries from .csv file. Optional `-lsa` flag generates word pairs in correct formatting for lsa web input (extraction of cosines).
 
 ## Generating Graphs
 
