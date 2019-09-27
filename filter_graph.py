@@ -80,7 +80,9 @@ filter_t = time.time()
 with open(OUTPUT_FILE, 'w+') as fout:
     with open(INPUT_FILE, 'r') as fin:
         for line in fin:
-            line_data = line.split()
+            line_data = line.split('\t')
+            if (len(line_data) > 3):
+            	print("Error: " + line)
             prime = line_data[0]
             length = -1
             try:
@@ -91,7 +93,7 @@ with open(OUTPUT_FILE, 'w+') as fout:
                 continue
             target = ' '.join(line_data[1:-1])
             if (length == 1):
-                fout.write("{} {}\n".format(prime, target))
+                fout.write("{},{}\n".format(prime, target))
                 fout.flush()
             if (prime[0] in alpha_set):
                 print("Scanning...[{}]".format(prime[0]), file=sys.stderr)
