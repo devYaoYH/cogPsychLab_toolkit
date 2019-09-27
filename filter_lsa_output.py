@@ -73,17 +73,27 @@ if (len(args) < NUM_REQUIRED_ARGS):
 
 INPUT_FILE = args[1]
 OUTPUT_FILE = args[2]
+extension = args[2].split('.')[-1]
+OUTPUT_ERROR_FILE = ''.join(args[2].split('.')[:-1]) + "_error." + extension
 
-with open(OUTPUT_FILE, 'w+') as fout:
-    with open(INPUT_FILE, 'r') as fin:
-        # Ignore first 2 lines
-        fin.readline()
-        fin.readline()
-        for line in fin:
-            target = " ".join(line.split()[1:])
-            second_line = fin.readline().split()
-            prime = " ".join(second_line[:-1])
-            cosine = float(second_line[-1])
-            # Extract relevant information into output file
-            fout.write("{},{},{}\n".format(prime, target, cosine))
-            fout.flush()
+with open(OUTPUT_ERROR_FILE, 'w+') as ferr:
+    with open(OUTPUT_FILE, 'w+') as fout:
+        with open(INPUT_FILE, 'r') as fin:
+            # Ignore first 2 lines
+            for line in fin:
+                if (line[:5] == "Texts"):
+                    target = " ".join(line.split()[1:])
+                    second_line = fin.readline().split()
+                    prime = " ".join(second_line[:-1])
+                    cosine = float(second_line[-1]) if second_line[-1] != "N/A" else "N/A"
+                    # Extract relevant information into output file
+                    fout.write("{},{},{}\n".format(prime, target, cosine))
+                    fout.flush()
+                else:
+                    bracket_list = re.search(": \'.*\'", line)
+                    if (bracket_list is not None):
+                        ferr.write(bracket_list.group()[3:-1])
+                        ferr.write("\n")
+                        ferr.flush()
+                    else:
+                        print("Unrecognized line: " + line)

@@ -137,9 +137,9 @@ word_t = time.time()
 word_list = []
 with open(WORD_FILE, 'r') as fin:
     for line in fin:
-        line_data = line.split()
+        line_data = line.split(',')
         prime = line_data[0].lower()
-        target = " ".join(line_data[1:]).lower()
+        target = " ".join(line_data[1]).lower()
         word_list.append((prime, target))
 debug_time("Loading word list...", word_t, time.time())
 

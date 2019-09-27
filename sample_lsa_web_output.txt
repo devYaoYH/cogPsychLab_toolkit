@@ -12,3 +12,7 @@ Texts	wings
 airplane	0.43
 Texts	seats
 airplane	0.23
+Can't find any terms from text: 'deod arant'
+Can't find any terms from text: 'soother'
+Can't find any terms from text: 'laptop'
+Can't find any terms from text: 'beachball'

@@ -13,8 +13,7 @@ argc = len(sys.argv)
 argv = sys.argv
 
 # List of cmdline flag variables
-FLAG_LSA = "lsa"
-FLAGS = set([FLAG_LSA])
+FLAGS = set([])
 
 # Number of required arguments
 REQUIRED_ARGS = ["word_list"]
@@ -105,15 +104,15 @@ debug_time("Finished extracting word pairs...", word_t, time.time())
 ###################
 write_t = time.time()
 # Write our filtered pairs to file
-OUTPUT_FILTERED_WORDS = "{}_{}.txt".format(''.join(WORD_FILE.split('.')[:-1]), "filtered" if FLAG_LSA not in flags else "lsa")
-print("Writing to:", OUTPUT_FILTERED_WORDS, file=sys.stderr)
-with open(OUTPUT_FILTERED_WORDS, 'w+') as fout:
-    if (FLAG_LSA in flags):
-        # Output word list for LSA cosines web interface
+OUTPUT_FILTERED_WORDS = "{}_{}.txt".format(''.join(WORD_FILE.split('.')[:-1]), "filtered")
+OUTPUT_LSA_WORDS = "{}_{}.txt".format(''.join(WORD_FILE.split('.')[:-1]), "lsa")
+print("Writing to: ", OUTPUT_FILTERED_WORDS, file=sys.stderr)
+with open(OUTPUT_LSA_WORDS, 'w+') as flsa:
+    with open(OUTPUT_FILTERED_WORDS, 'w+') as fout:
         for prime, target in word_list:
-            fout.write("{}\n\n{}\n\n".format(prime, target))
-    else:
-        for prime, target in word_list:
-            fout.write("{} {}\n".format(prime, target))
+            # Output word list for LSA cosines web interface
+            flsa.write("{}\n\n{}\n\n".format(prime, target))
+            # Output to csv format
+            fout.write("{},{}\n".format(prime, target))
 
 debug_time("Finished printing word pairs...", write_t, time.time())
