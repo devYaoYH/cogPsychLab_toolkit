@@ -18,6 +18,7 @@
 
 ## Data Pipeline Diagram
 `In-Progress`
+![Data Pipeline Sketch](data_pipeline.PNG)
 
 ## Filtering Word-Pairs
 
