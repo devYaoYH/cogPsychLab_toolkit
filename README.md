@@ -1,8 +1,33 @@
 # Python Toolkit
 
+## Scripts
+
+- extract_words.py
+
+- extract_acn_val.py
+
+- extract_lsa_output.py
+
+- filter_graph.py
+
+- filter_words.py
+
+- parse_lsa.py
+
+- search_graph.py
+
+## Data Pipeline Diagram
+`In-Progress`
+
 ## Filtering Word-Pairs
 
-Use `filter_words.py` and supply required arguments to generate list of \<prime, target\> pair queries from .csv file. Optional `-lsa` flag generates word pairs in correct formatting for lsa web input (extraction of cosines).
+Use `extract_words.py` then `filter_words.py` to fix grammar/spelling mistakes and supply required arguments to generate list of \<prime, target\> pair queries from .csv file.
+
+Use `parse_lsa.py` to transform .csv file to lsa web format (newline separated pairs).
+
+Use `extract_lsa_output.py` to extract cosines from web output.
+
+Use `extract_acn_val.py` to extract acn values from raw ACN graph data file.
 
 ## Generating Graphs
 
@@ -41,4 +66,30 @@ Loading word list... [2.0ms]
 Loading graph from file: .\graph\pathlengths_undirected_step_distance_pmfg.graph
 Graph Loaded... [53.012ms]
 Paths found... [23980.844ms]
+```
+
+## Sample Execution Order
+```
+#Pipeline starting from word_pairs_single.csv (raw copy of first 2 columns of MOESM3_ESM excel file)
+
+#Extract words from raw excel file into <prime, target> .csv file
+python extract_words.py word_pairs_single.csv -s
+
+#Fix words in <prime, target> formatted .csv
+python filter_words.py word_pairs_single_filtered.csv -words graph_words.csv
+
+#Parse .csv to lsa required format .txt
+python parse_lsa.py word_pairs_single_filtered_fixed.csv
+
+#Extract cosines from lsa web output
+python extract_lsa_output.py word_pairs_single_filtered_fixed_lsa_raw.txt
+
+#Generate ACN values given list of <prime, target>
+python extract_acn_val.py word_pairs_single_filtered_fixed.csv data\acn_correlation_matrix.data
+
+#Run searches through graphs
+python search_graph.py word_pairs_single_filtered_fixed.csv graph\pathlengths_directed_step_distance.graph results\word_pairs_single_filtered_fixed_directed_step_distance.csv -d
+python search_graph.py word_pairs_single_filtered_fixed.csv graph\pathlengths_undirected_kennetetal.graph results\word_pairs_single_filtered_fixed_undirected_kennetetal.csv
+python search_graph.py word_pairs_single_filtered_fixed.csv graph\pathlengths_undirected_step_distance.graph results\word_pairs_single_filtered_fixed_undirected_step_distance.csv
+python search_graph.py word_pairs_single_filtered_fixed.csv graph\pathlengths_undirected_step_distance_pmfg.graph results\word_pairs_single_filtered_fixed_undirected_step_distance_pmfg.csv
 ```
