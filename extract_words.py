@@ -13,10 +13,11 @@ argc = len(sys.argv)
 argv = sys.argv
 
 # List of cmdline flag variables
-FLAGS = set([])
+FLAG_SINGLE = "s"
+FLAGS = set([FLAG_SINGLE])
 
 # Number of required arguments
-REQUIRED_ARGS = ["lsa_output_file", "output.csv"]
+REQUIRED_ARGS = ["word_list"]
 OPTIONAL_ARGS = {
 }
 
@@ -71,29 +72,55 @@ if (len(args) < NUM_REQUIRED_ARGS):
 # END OF PARSING - arguments in: args, optional_args, undefined_args, flags #
 #############################################################################
 
-INPUT_FILE = args[1]
-OUTPUT_FILE = args[2]
-extension = args[2].split('.')[-1]
-OUTPUT_ERROR_FILE = ''.join(args[2].split('.')[:-1]) + "_error." + extension
+# word pair .csv file
+WORD_FILE = args[1]
+is_single = FLAG_SINGLE in flags
 
-with open(OUTPUT_ERROR_FILE, 'w+') as ferr:
-    with open(OUTPUT_FILE, 'w+') as fout:
-        with open(INPUT_FILE, 'r') as fin:
-            # Ignore first 2 lines
-            for line in fin:
-                if (line[:5] == "Texts"):
-                    target = " ".join(line.split()[1:])
-                    second_line = fin.readline().split()
-                    prime = " ".join(second_line[:-1])
-                    cosine = float(second_line[-1]) if second_line[-1] != "N/A" else "N/A"
-                    # Extract relevant information into output file
-                    fout.write("{},{},{}\n".format(prime, target, cosine))
-                    fout.flush()
+############################
+# READ WORD LIST FROM FILE #
+############################
+word_t = time.time()
+word_list = set()
+with open(WORD_FILE, 'r') as fin:
+    for line in fin:
+        prime = ""
+        target = ""
+        # Split by FIRST instance of ',' comma
+        for i, c in enumerate(line):
+            if (c == ','):
+                prime = line[:i].lower().strip().strip('\"')
+                target = line[i+1:].lower().strip().strip('\"')
+                break
+        # Use regex to extract words within brackets
+        bracket_list = re.search("\(.*\)", target)
+        if (bracket_list is not None):
+            target = target[:bracket_list.span()[0]]
+            extras = [s.strip() for s in bracket_list.group()[1:-1].split(',')]
+            for extra in extras:
+                if (is_single):
+                    for extra_single in extra.split():
+                        word_list.add((prime, extra_single))
                 else:
-                    bracket_list = re.search(": \'.*\'", line)
-                    if (bracket_list is not None):
-                        ferr.write(bracket_list.group()[3:-1])
-                        ferr.write("\n")
-                        ferr.flush()
-                    else:
-                        print("Unrecognized line: " + line)
+                    word_list.add((prime, extra))
+        if (is_single):
+            for target_single in target.split():
+                word_list.add((prime, target_single))
+        else:
+            word_list.add((prime, target))
+
+word_list = sorted(list(word_list))
+debug_time("Finished extracting word pairs...", word_t, time.time())
+
+###################
+# WRITE WORD LIST #
+###################
+write_t = time.time()
+# Write our filtered pairs to file
+OUTPUT_FILTERED_WORDS = "{}_{}.csv".format('.'.join(WORD_FILE.split('.')[:-1]), "filtered")
+print("Writing to: ", OUTPUT_FILTERED_WORDS, file=sys.stderr)
+with open(OUTPUT_FILTERED_WORDS, 'w+') as fout:
+    for prime, target in word_list:
+        # Output to csv format
+        fout.write("{},{}\n".format(prime, target))
+
+debug_time("Finished printing word pairs...", write_t, time.time())

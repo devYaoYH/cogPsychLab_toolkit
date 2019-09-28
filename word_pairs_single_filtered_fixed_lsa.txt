@@ -1,38 +1,6 @@
 airplane
 
-flight
-
-airplane
-
-journey
-
-airplane
-
-trip
-
-airplane
-
-travel 
-
-airplane
-
-wings
-
-airplane
-
-seats
-
-airplane
-
 air
-
-airplane
-
-sky 
-
-airplane
-
-cloud
 
 airplane
 
@@ -40,7 +8,31 @@ airport
 
 airplane
 
-runway
+attendant
+
+airplane
+
+cloud
+
+airplane
+
+flight
+
+airplane
+
+food
+
+airplane
+
+journey
+
+airplane
+
+luggage
+
+airplane
+
+meal
 
 airplane
 
@@ -52,19 +44,19 @@ pilot
 
 airplane
 
+runway
+
+airplane
+
+seat
+
+airplane
+
+sky
+
+airplane
+
 stewardess
-
-airplane
-
-flight attendant 
-
-airplane
-
-meal
-
-airplane
-
-food 
 
 airplane
 
@@ -72,47 +64,15 @@ suitcase
 
 airplane
 
-luggage 
+travel
 
-apple
+airplane
 
-red
+trip
 
-apple
+airplane
 
-green
-
-apple
-
-orange
-
-apple
-
-worm
-
-apple
-
-banana
-
-apple
-
-leaf
-
-apple
-
-seeds
-
-apple
-
-core
-
-apple
-
-tree
-
-apple
-
-orchard
+wings
 
 apple
 
@@ -120,7 +80,35 @@ autumn
 
 apple
 
+banana
+
+apple
+
+core
+
+apple
+
 fruit
+
+apple
+
+green
+
+apple
+
+juice
+
+apple
+
+leaf
+
+apple
+
+orange
+
+apple
+
+orchard
 
 apple
 
@@ -128,79 +116,79 @@ pie
 
 apple
 
+red
+
+apple
+
+seed
+
+apple
+
 teacher
 
 apple
 
-juice
-
-axe
-
-chopping
-
-axe
-
-cutting 
-
-axe
-
-handle
-
-axe
-
-steel
-
-axe
-
-metal 
-
-axe
-
 tree
 
-axe
+apple
 
-logs
+worm
 
-axe
+ax
 
-wood 
+chop
 
-axe
+ax
 
-spray
+cut
 
-axe
+ax
 
-deodarant 
+deodarant
 
-axe
-
-lumberjack
-
-axe
+ax
 
 fire
 
-axe
+ax
+
+handle
+
+ax
+
+log
+
+ax
+
+lumberjack
+
+ax
+
+metal
+
+ax
 
 murderer
 
+ax
+
+spray
+
+ax
+
+steel
+
+ax
+
+tree
+
+ax
+
+wood
+
 baby
 
-crying
-
-baby
-
-cute
-
-baby
-
-small
-
-baby
-
-diaper
+blanket
 
 baby
 
@@ -208,27 +196,23 @@ bottle
 
 baby
 
-pacifier
-
-baby
-
-soother 
-
-baby
-
-toy
-
-baby
-
 cradle
 
 baby
 
-crib 
+crib
 
 baby
 
-mother
+cry
+
+baby
+
+cute
+
+baby
+
+diaper
 
 baby
 
@@ -236,51 +220,27 @@ milk
 
 baby
 
+mother
+
+baby
+
+pacify
+
+baby
+
+small
+
+baby
+
+sooth
+
+baby
+
 towel
 
 baby
 
-blanket 
-
-bag
-
-shopping
-
-bag
-
-plastic
-
-bag
-
-paper
-
-bag
-
-handles
-
-bag
-
-zipper
-
-bag
-
-school
-
-bag
-
-hand
-
-bag
-
-food
-
-bag
-
-groceries 
-
-bag
-
-wallet
+toy
 
 bag
 
@@ -288,19 +248,55 @@ book
 
 bag
 
+computer
+
+bag
+
+food
+
+bag
+
+groceries
+
+bag
+
+hand
+
+bag
+
+handle
+
+bag
+
 laptop
 
 bag
 
-computer 
+paper
+
+bag
+
+plastic
+
+bag
+
+school
+
+bag
+
+shopping
+
+bag
+
+wallet
 
 bag
 
 woman
 
-baker
+bag
 
-hat
+zipper
 
 baker
 
@@ -320,27 +316,11 @@ cake
 
 baker
 
-cookies
+cookie
 
 baker
 
-flour
-
-baker
-
-cupcakes
-
-baker
-
-pastries
-
-baker
-
-pie
-
-baker
-
-muffins
+cupcake
 
 baker
 
@@ -348,47 +328,27 @@ dough
 
 baker
 
+flour
+
+baker
+
+hat
+
+baker
+
+muffin
+
+baker
+
 oven
 
-ball
+baker
 
-bouncing
+pastry
 
-ball
+baker
 
-game
-
-ball
-
-net
-
-ball
-
-hoop
-
-ball
-
-basket 
-
-ball
-
-beach
-
-ball
-
-park
-
-ball
-
-basketball
-
-ball
-
-sport
-
-ball
-
-dog
+pie
 
 ball
 
@@ -396,11 +356,47 @@ baseball
 
 ball
 
+basket
+
+ball
+
+basketball
+
+ball
+
+beach
+
+ball
+
+bounce
+
+ball
+
+dog
+
+ball
+
+game
+
+ball
+
+hoop
+
+ball
+
+net
+
+ball
+
+park
+
+ball
+
 soccer
 
-bank
+ball
 
-investment
+sport
 
 bank
 
@@ -408,55 +404,7 @@ atm
 
 bank
 
-vault
-
 bank
-
-safe 
-
-bank
-
-security
-
-bank
-
-guard
-
-bank
-
-cash register
-
-bank
-
-client
-
-bank
-
-customer 
-
-bank
-
-cash
-
-bank
-
-currency
-
-bank
-
-money 
-
-bank
-
-cashier
-
-bank
-
-clerk
-
-bank
-
-bank teller 
 
 bank
 
@@ -464,15 +412,27 @@ burglar
 
 bank
 
-robber 
+card
 
 bank
 
-visa
+cash
 
 bank
 
-credit card 
+cashier
+
+bank
+
+cheque
+
+bank
+
+clerk
+
+bank
+
+client
 
 bank
 
@@ -480,11 +440,87 @@ credit
 
 bank
 
-loan 
+currency
 
 bank
 
-cheque
+customer
+
+bank
+
+guard
+
+bank
+
+investment
+
+bank
+
+loan
+
+bank
+
+money
+
+bank
+
+register
+
+bank
+
+robber
+
+bank
+
+safe
+
+bank
+
+security
+
+bank
+
+teller
+
+bank
+
+vault
+
+bank
+
+visa
+
+barn
+
+animals
+
+barn
+
+chicken
+
+barn
+
+cow
+
+barn
+
+farm
+
+barn
+
+farmer
+
+barn
+
+hay
+
+barn
+
+horse
+
+barn
+
+pig
 
 barn
 
@@ -496,71 +532,15 @@ straw
 
 barn
 
-hay 
+tractor
 
 barn
 
 wood
 
-barn
-
-farm
-
-barn
-
-horse
-
-barn
-
-cow
-
-barn
-
-animals
-
-barn
-
-pig
-
-barn
-
-farmer
-
-barn
-
-chicken
-
-barn
-
-tractor
-
 beach
 
-swimming
-
-beach
-
-sunshine
-
-beach
-
-sun 
-
-beach
-
-sand
-
-beach
-
-water
-
-beach
-
-summer
-
-beach
-
-volleyball
+ball
 
 beach
 
@@ -568,7 +548,15 @@ beachball
 
 beach
 
-ball 
+bikini
+
+beach
+
+ocean
+
+beach
+
+sand
 
 beach
 
@@ -576,11 +564,19 @@ sea
 
 beach
 
-ocean 
+summer
 
 beach
 
-towel
+sun
+
+beach
+
+sunshine
+
+beach
+
+swim
 
 beach
 
@@ -588,35 +584,15 @@ swimsuit
 
 beach
 
-bikini 
+towel
 
-beak
+beach
 
-eat
+volleyball
 
-beak
+beach
 
-peck 
-
-beak
-
-sharp
-
-beak
-
-worm
-
-beak
-
-nest
-
-beak
-
-seeds
-
-beak
-
-food
+water
 
 beak
 
@@ -626,13 +602,37 @@ beak
 
 duck
 
+beak
+
+eat
+
+beak
+
+food
+
+beak
+
+nest
+
+beak
+
+peck
+
+beak
+
+seed
+
+beak
+
+sharp
+
+beak
+
+worm
+
 bear
 
-fear
-
-bear
-
-brown
+berry
 
 bear
 
@@ -640,27 +640,23 @@ big
 
 bear
 
+brown
+
+bear
+
+camping
+
+bear
+
+cave
+
+bear
+
+claw
+
+bear
+
 cub
-
-bear
-
-fur
-
-bear
-
-claws
-
-bear
-
-teeth
-
-bear
-
-forest
-
-bear
-
-tree
 
 bear
 
@@ -668,15 +664,19 @@ den
 
 bear
 
-cave 
+fear
 
 bear
 
-salmon
+fish
 
 bear
 
-fish 
+forest
+
+bear
+
+fur
 
 bear
 
@@ -684,39 +684,15 @@ honey
 
 bear
 
-berries
+salmon
 
 bear
 
-camping
+teeth
 
-bed
+bear
 
-sleep
-
-bed
-
-rest
-
-bed
-
-pillow
-
-bed
-
-sheets
-
-bed
-
-mattress
-
-bed
-
-comforter
-
-bed
-
-duvet 
+tree
 
 bed
 
@@ -724,7 +700,23 @@ bedroom
 
 bed
 
+blanket
+
+bed
+
+comforter
+
+bed
+
+duvet
+
+bed
+
 house
+
+bed
+
+mattress
 
 bed
 
@@ -732,19 +724,59 @@ night
 
 bed
 
-blanket
+pillow
 
-bee
+bed
 
-sting
+rest
 
-bee
+bed
 
-yellow
+sheets
+
+bed
+
+sleep
 
 bee
 
 bear
+
+bee
+
+black
+
+bee
+
+comb
+
+bee
+
+flower
+
+bee
+
+hive
+
+bee
+
+honey
+
+bee
+
+nest
+
+bee
+
+pollen
+
+bee
+
+queen
+
+bee
+
+sting
 
 bee
 
@@ -756,87 +788,15 @@ stripes
 
 bee
 
-nest
-
-bee
-
-hive 
-
-bee
-
-honey
-
-bee
-
-pollen
-
-bee
-
-black
-
-bee
-
-queen
-
-bee
-
-flower
-
-bee
-
-comb
+yellow
 
 beer
 
-wine
+alcohol
 
 beer
 
-chips
-
-beer
-
-liquor
-
-beer
-
-alcohol 
-
-beer
-
-foam
-
-beer
-
-pub
-
-beer
-
-bar 
-
-beer
-
-glass
-
-beer
-
-mug
-
-beer
-
-cup 
-
-beer
-
-bottle
-
-beer
-
-keg
-
-beer
-
-drunk person
+bar
 
 beer
 
@@ -844,43 +804,59 @@ belly
 
 beer
 
+bottle
+
+beer
+
+chips
+
+beer
+
+cup
+
+beer
+
 drink
+
+beer
+
+drunk
+
+beer
+
+foam
+
+beer
+
+glass
+
+beer
+
+keg
+
+beer
+
+liquor
+
+beer
+
+mug
 
 beer
 
 party
 
-bird
+beer
 
-fly
+person
 
-bird
+beer
 
-chirp
+pub
 
-bird
+beer
 
-sing 
-
-bird
-
-wings
-
-bird
-
-feather
-
-bird
-
-beak
-
-bird
-
-nest
-
-bird
-
-tree
+wine
 
 bird
 
@@ -888,7 +864,7 @@ air
 
 bird
 
-sky 
+beak
 
 bird
 
@@ -896,31 +872,51 @@ cage
 
 bird
 
+cat
+
+bird
+
+chirp
+
+bird
+
 egg
 
 bird
 
+feather
+
+bird
+
+fly
+
+bird
+
+nest
+
+bird
+
+seed
+
+bird
+
+sing
+
+bird
+
+sky
+
+bird
+
+tree
+
+bird
+
+wings
+
+bird
+
 worm
-
-bird
-
-seeds
-
-bird
-
-cat
-
-boat
-
-tubing
-
-boat
-
-fish
-
-boat
-
-sails
 
 boat
 
@@ -928,35 +924,7 @@ anchor
 
 boat
 
-engine
-
-boat
-
-motor 
-
-boat
-
-paddles
-
-boat
-
-water
-
-boat
-
-sea
-
-boat
-
-ocean 
-
-boat
-
-lake
-
-boat
-
-river
+captain
 
 boat
 
@@ -964,23 +932,51 @@ dock
 
 boat
 
+engine
+
+boat
+
+fish
+
+boat
+
+lake
+
+boat
+
+motor
+
+boat
+
+ocean
+
+boat
+
+paddle
+
+boat
+
+river
+
+boat
+
+sail
+
+boat
+
+sea
+
+boat
+
 summer
 
 boat
 
-captain
+tube
 
-bone
+boat
 
-strong
-
-bone
-
-broken
-
-bone
-
-muscles
+water
 
 bone
 
@@ -988,19 +984,7 @@ body
 
 bone
 
-marrow
-
-bone
-
-dog
-
-bone
-
-skeleton
-
-bone
-
-dinosaur
+broken
 
 bone
 
@@ -1008,15 +992,63 @@ cast
 
 bone
 
+dinosaur
+
+bone
+
+dog
+
+bone
+
+marrow
+
+bone
+
 milk
+
+bone
+
+muscle
+
+bone
+
+skeleton
+
+bone
+
+strong
 
 book
 
-reading
+author
+
+book
+
+bookmark
+
+book
+
+bookshelf
+
+book
+
+bookstore
+
+book
+
+cover
 
 book
 
 glasses
+
+book
+
+knowledge
+
+book
+
+library
 
 book
 
@@ -1028,23 +1060,7 @@ paper
 
 book
 
-words
-
-book
-
-bookmark
-
-book
-
-writer
-
-book
-
-author 
-
-book
-
-cover
+reading
 
 book
 
@@ -1052,27 +1068,11 @@ school
 
 book
 
-library
+words
 
 book
 
-bookstore
-
-book
-
-bookshelf
-
-book
-
-knowledge
-
-boy
-
-girl
-
-boy
-
-father
+writer
 
 boy
 
@@ -1080,7 +1080,11 @@ car
 
 boy
 
-penis
+father
+
+boy
+
+friend
 
 boy
 
@@ -1088,7 +1092,15 @@ games
 
 boy
 
-toys
+girl
+
+boy
+
+male
+
+boy
+
+penis
 
 boy
 
@@ -1100,55 +1112,11 @@ sports
 
 boy
 
-male
-
-boy
-
-friend
+toys
 
 builder
 
-construction
-
-builder
-
-job
-
-builder
-
-work 
-
-builder
-
-hammer
-
-builder
-
-helmet
-
-builder
-
-hardhat 
-
-builder
-
-tools
-
-builder
-
-equipment
-
-builder
-
-machines 
-
-builder
-
-house
-
-builder
-
-wood
+bob
 
 builder
 
@@ -1156,47 +1124,55 @@ brick
 
 builder
 
-nails
-
-builder
-
 concrete
 
 builder
 
-bob
+construction
 
-cage
+builder
 
-metal
+equipment
 
-cage
+builder
 
-bars
+hammer
 
-cage
+builder
 
-lock
+hardhat
 
-cage
+builder
 
-key
+helmet
 
-cage
+builder
 
-jail
+house
 
-cage
+builder
 
-prison 
+job
 
-cage
+builder
 
-zoo
+machine
 
-cage
+builder
 
-bird
+nails
+
+builder
+
+tools
+
+builder
+
+wood
+
+builder
+
+work
 
 cage
 
@@ -1204,11 +1180,11 @@ animal
 
 cage
 
-dog
+bar
 
 cage
 
-lion
+bird
 
 cage
 
@@ -1216,63 +1192,43 @@ criminal
 
 cage
 
-prisoner 
+dog
+
+cage
+
+jail
+
+cage
+
+key
+
+cage
+
+lion
+
+cage
+
+lock
+
+cage
+
+metal
+
+cage
+
+prison
+
+cage
+
+prisoner
+
+cage
+
+zoo
 
 cake
 
-gifts
-
-cake
-
-presents 
-
-cake
-
-frosting
-
-cake
-
-icing 
-
-cake
-
-candles
-
-cake
-
-chocolate
-
-cake
-
-flour
-
-cake
-
-sugar
-
-cake
-
-vanilla
-
-cake
-
-cream
-
-cake
-
-platter
-
-cake
-
-plate 
-
-cake
-
-stove
-
-cake
-
-oven 
+baker
 
 cake
 
@@ -1284,39 +1240,71 @@ birthday
 
 cake
 
-party
+candle
 
 cake
 
-baker
+chocolate
+
+cake
+
+cream
+
+cake
+
+flour
 
 cake
 
 fork
 
+cake
+
+frosting
+
+cake
+
+gift
+
+cake
+
+icing
+
+cake
+
+oven
+
+cake
+
+party
+
+cake
+
+plate
+
+cake
+
+platter
+
+cake
+
+present
+
+cake
+
+stove
+
+cake
+
+sugar
+
+cake
+
+vanilla
+
 camel
 
-spit
-
-camel
-
-hump
-
-camel
-
-desert
-
-camel
-
-sand
-
-camel
-
-egypt
-
-camel
-
-water
+arab
 
 camel
 
@@ -1324,19 +1312,31 @@ cactus
 
 camel
 
-arabs
+desert
+
+camel
+
+egypt
+
+camel
+
+hump
+
+camel
+
+sand
+
+camel
+
+spit
+
+camel
+
+water
 
 candle
 
-match
-
-candle
-
-wax
-
-candle
-
-wick
+birthday
 
 candle
 
@@ -1348,7 +1348,7 @@ candleholder
 
 candle
 
-table
+fire
 
 candle
 
@@ -1356,7 +1356,7 @@ flame
 
 candle
 
-fire 
+heat
 
 candle
 
@@ -1364,15 +1364,11 @@ light
 
 candle
 
-heat
-
-candle
-
 lighter
 
 candle
 
-birthday
+match
 
 candle
 
@@ -1382,25 +1378,17 @@ candle
 
 scent
 
-candy
+candle
 
-sweet
+table
 
-candy
+candle
 
-sour
+wax
 
-candy
+candle
 
-wrapper
-
-candy
-
-store
-
-candy
-
-mouth
+wick
 
 candy
 
@@ -1408,23 +1396,35 @@ cavity
 
 candy
 
+child
+
+candy
+
 halloween
 
 candy
 
-child
+mouth
+
+candy
+
+sour
+
+candy
+
+store
 
 candy
 
 sugar
 
-car
+candy
 
-driving
+sweet
 
-car
+candy
 
-collision
+wrapper
 
 car
 
@@ -1432,23 +1432,19 @@ accident
 
 car
 
-crash 
+collision
 
 car
 
-wheels
+crash
 
 car
 
-tires
+driver
 
 car
 
-steering wheel
-
-car
-
-seats
+drive
 
 car
 
@@ -1456,23 +1452,7 @@ engine
 
 car
 
-radio
-
-car
-
-key
-
-car
-
-street
-
-car
-
-highway
-
-car
-
-road 
+fuel
 
 car
 
@@ -1480,11 +1460,27 @@ garage
 
 car
 
-fuel
+gas
 
 car
 
-gas 
+highway
+
+car
+
+key
+
+car
+
+radio
+
+car
+
+road
+
+car
+
+seat
 
 car
 
@@ -1492,59 +1488,31 @@ speed
 
 car
 
-driver
+steer
+
+car
+
+street
+
+car
+
+tire
+
+car
+
+wheel
+
+car
+
+wheel
 
 castle
 
-moat
-
-castle
-
-bricks
-
-castle
-
-stones 
+brick
 
 castle
 
 bridge
-
-castle
-
-king
-
-castle
-
-queen
-
-castle
-
-guard
-
-castle
-
-knight 
-
-castle
-
-princess
-
-castle
-
-prince
-
-castle
-
-royalty
-
-castle
-
-wealth
-
-castle
-
-money 
 
 castle
 
@@ -1554,29 +1522,57 @@ castle
 
 dragon
 
+castle
+
+guard
+
+castle
+
+king
+
+castle
+
+knight
+
+castle
+
+moat
+
+castle
+
+money
+
+castle
+
+prince
+
+castle
+
+princess
+
+castle
+
+queen
+
+castle
+
+royalty
+
+castle
+
+stone
+
+castle
+
+wealth
+
 cat
 
-meow
+box
 
 cat
 
-dog
-
-cat
-
-fur
-
-cat
-
-claws
-
-cat
-
-whiskers
-
-cat
-
-house
+claw
 
 cat
 
@@ -1584,27 +1580,7 @@ couch
 
 cat
 
-tree
-
-cat
-
-rat
-
-cat
-
-mouse 
-
-cat
-
-milk
-
-cat
-
-yarn
-
-cat
-
-kitten
+dog
 
 cat
 
@@ -1612,51 +1588,55 @@ fish
 
 cat
 
+fur
+
+cat
+
+house
+
+cat
+
+kitten
+
+cat
+
+litter
+
+cat
+
+meow
+
+cat
+
+milk
+
+cat
+
+mouse
+
+cat
+
 pet
 
 cat
 
-litter box
+rat
+
+cat
+
+tree
+
+cat
+
+whiskers
+
+cat
+
+yarn
 
 cheese
 
-yellow
-
-cheese
-
-crackers
-
-cheese
-
-wine
-
-cheese
-
-milk
-
-cheese
-
-hole
-
-cheese
-
-pizza
-
-cheese
-
-trap
-
-cheese
-
-fridge
-
-cheese
-
-macaroni
-
-cheese
-
-pasta 
+cheddar
 
 cheese
 
@@ -1664,11 +1644,27 @@ cow
 
 cheese
 
-sandwich
+crackers
+
+cheese
+
+fridge
+
+cheese
+
+hole
 
 cheese
 
 knife
+
+cheese
+
+macaroni
+
+cheese
+
+milk
 
 cheese
 
@@ -1676,39 +1672,27 @@ mouse
 
 cheese
 
-cheddar
+pasta
 
-chef
+cheese
 
-cooking
+pizza
 
-chef
+cheese
 
-waiter
+sandwich
 
-chef
+cheese
 
-hat
+trap
 
-chef
+cheese
 
-knife
+wine
 
-chef
+cheese
 
-pan
-
-chef
-
-stove
-
-chef
-
-oven 
-
-chef
-
-pot
+yellow
 
 chef
 
@@ -1716,7 +1700,15 @@ apron
 
 chef
 
-restaurant
+cooking
+
+chef
+
+food
+
+chef
+
+hat
 
 chef
 
@@ -1724,55 +1716,31 @@ kitchen
 
 chef
 
-food
+knife
 
-chicken
+chef
 
-chick
+oven
 
-chicken
+chef
 
-rooster
+pan
 
-chicken
+chef
 
-feathers
+pot
 
-chicken
+chef
 
-wings
+restaurant
 
-chicken
+chef
 
-drumstick
+stove
 
-chicken
+chef
 
-leg 
-
-chicken
-
-beak
-
-chicken
-
-farm
-
-chicken
-
-pen
-
-chicken
-
-cage
-
-chicken
-
-henhouse
-
-chicken
-
-coop 
+waiter
 
 chicken
 
@@ -1780,11 +1748,19 @@ barn
 
 chicken
 
-egg
+beak
 
 chicken
 
-seeds
+cage
+
+chicken
+
+chick
+
+chicken
+
+coop
 
 chicken
 
@@ -1792,15 +1768,19 @@ corn
 
 chicken
 
-grain 
-
-chicken
-
-food
-
-chicken
-
 dinner
+
+chicken
+
+drumstick
+
+chicken
+
+egg
+
+chicken
+
+farm
 
 chicken
 
@@ -1808,47 +1788,43 @@ farmer
 
 chicken
 
+feathers
+
+chicken
+
+food
+
+chicken
+
+grain
+
+chicken
+
+henhouse
+
+chicken
+
 kfc
 
-child
+chicken
 
-young
+leg
 
-child
+chicken
 
-innocent
+pen
 
-child
+chicken
 
-little
+rooster
 
-child
+chicken
 
-small 
+seed
 
-child
+chicken
 
-mother
-
-child
-
-toys
-
-child
-
-school
-
-child
-
-kindergarten
-
-child
-
-daycare 
-
-child
-
-playground
+wings
 
 child
 
@@ -1856,11 +1832,47 @@ candy
 
 child
 
+daycare
+
+child
+
+innocent
+
+child
+
+kindergarten
+
+child
+
+little
+
+child
+
+mother
+
+child
+
 parents
 
-church
+child
 
-cross
+playground
+
+child
+
+school
+
+child
+
+small
+
+child
+
+toys
+
+child
+
+young
 
 church
 
@@ -1868,23 +1880,7 @@ alter
 
 church
 
-choir
-
-church
-
-organ
-
-church
-
-sunday
-
-church
-
-god
-
-church
-
-priest
+bench
 
 church
 
@@ -1892,15 +1888,27 @@ bible
 
 church
 
-benches
+choir
 
 church
 
-pews 
+cross
 
 church
 
-religion
+god
+
+church
+
+organ
+
+church
+
+people
+
+church
+
+pew
 
 church
 
@@ -1908,15 +1916,23 @@ prayer
 
 church
 
-people
+priest
+
+church
+
+religion
+
+church
+
+sunday
 
 circus
 
-cotton candy
+acrobat
 
 circus
 
-tent
+candy
 
 circus
 
@@ -1924,19 +1940,11 @@ clown
 
 circus
 
+cotton
+
+circus
+
 elephant
-
-circus
-
-popcorn
-
-circus
-
-lion
-
-circus
-
-show
 
 circus
 
@@ -1944,35 +1952,19 @@ gymnast
 
 circus
 
-acrobat 
+lion
 
-clown
+circus
 
-scary
+popcorn
 
-clown
+circus
 
-funny
+show
 
-clown
+circus
 
-elephant
-
-clown
-
-red nose
-
-clown
-
-face paint
-
-clown
-
-makeup 
-
-clown
-
-big shoes
+tent
 
 clown
 
@@ -1980,23 +1972,15 @@ balloon
 
 clown
 
-wig
+big
 
 clown
 
-circus
+birthday
 
 clown
 
-party
-
-clown
-
-fair
-
-clown
-
-carnival 
+carnival
 
 clown
 
@@ -2004,7 +1988,63 @@ children
 
 clown
 
-birthday
+circus
+
+clown
+
+elephant
+
+clown
+
+face
+
+clown
+
+fair
+
+clown
+
+funny
+
+clown
+
+makeup
+
+clown
+
+nose
+
+clown
+
+paint
+
+clown
+
+party
+
+clown
+
+red
+
+clown
+
+scary
+
+clown
+
+shoes
+
+clown
+
+wig
+
+coffee
+
+beans
+
+coffee
+
+biscuit
 
 coffee
 
@@ -2012,11 +2052,67 @@ black
 
 coffee
 
+breakfast
+
+coffee
+
+caffeine
+
+coffee
+
+cake
+
+coffee
+
+coffee
+
+coffee
+
+cream
+
+coffee
+
+cup
+
+coffee
+
+danish
+
+coffee
+
+donut
+
+coffee
+
+hortons
+
+coffee
+
 milk
 
 coffee
 
-cream 
+morning
+
+coffee
+
+muffin
+
+coffee
+
+mug
+
+coffee
+
+pastry
+
+coffee
+
+shop
+
+coffee
+
+starbucks
 
 coffee
 
@@ -2028,95 +2124,7 @@ tea
 
 coffee
 
-donut
-
-coffee
-
-biscuit
-
-coffee
-
-cake
-
-coffee
-
-danish
-
-coffee
-
-muffin
-
-coffee
-
-pastry 
-
-coffee
-
-caffeine
-
-coffee
-
-beans
-
-coffee
-
-cup
-
-coffee
-
-mug 
-
-coffee
-
-tim hortons
-
-coffee
-
-starbucks
-
-coffee
-
-coffee shop 
-
-coffee
-
-morning
-
-coffee
-
-breakfast
-
-computer
-
-printer
-
-computer
-
-keyboard
-
-computer
-
-mouse
-
-computer
-
-monitor
-
-computer
-
-screen 
-
-computer
-
-games
-
-computer
-
-speakers
-
-computer
-
-school
+tim
 
 computer
 
@@ -2124,7 +2132,11 @@ desk
 
 computer
 
-laptop
+facebook
+
+computer
+
+games
 
 computer
 
@@ -2132,19 +2144,35 @@ internet
 
 computer
 
-facebook
+keyboard
 
-cow
+computer
 
-calf
+laptop
 
-cow
+computer
 
-spots
+monitor
 
-cow
+computer
 
-farm
+mouse
+
+computer
+
+printer
+
+computer
+
+school
+
+computer
+
+screen
+
+computer
+
+speaker
 
 cow
 
@@ -2152,15 +2180,27 @@ barn
 
 cow
 
-pasture
+beef
 
 cow
 
-field 
+calf
 
 cow
 
-milk
+farm
+
+cow
+
+farmer
+
+cow
+
+field
+
+cow
+
+grass
 
 cow
 
@@ -2168,47 +2208,35 @@ hay
 
 cow
 
-grass 
-
-cow
-
 meat
 
 cow
 
-beef 
+milk
 
 cow
 
-farmer
+pasture
+
+cow
+
+spots
 
 crown
 
-throne
+castle
+
+crown
+
+diamond
+
+crown
+
+gem
 
 crown
 
 gold
-
-crown
-
-gems
-
-crown
-
-diamonds
-
-crown
-
-jewels 
-
-crown
-
-palace
-
-crown
-
-castle 
 
 crown
 
@@ -2216,11 +2244,27 @@ head
 
 crown
 
+jewel
+
+crown
+
+king
+
+crown
+
 monarch
 
 crown
 
-king 
+money
+
+crown
+
+palace
+
+crown
+
+princess
 
 crown
 
@@ -2228,35 +2272,11 @@ queen
 
 crown
 
-princess
-
-crown
-
-money
-
-crown
-
 royalty
 
-desert
+crown
 
-sand
-
-desert
-
-heat
-
-desert
-
-pyramids
-
-desert
-
-water
-
-desert
-
-camel
+throne
 
 desert
 
@@ -2264,7 +2284,7 @@ cactus
 
 desert
 
-sun
+camel
 
 desert
 
@@ -2272,23 +2292,31 @@ drought
 
 desert
 
-palm tree
+heat
 
-diamond ring
+desert
 
-money
+palm
 
-diamond ring
+desert
 
-gold
+pyramid
 
-diamond ring
+desert
 
-jewels
+sand
 
-diamond ring
+desert
 
-finger
+sun
+
+desert
+
+tree
+
+desert
+
+water
 
 diamond ring
 
@@ -2296,19 +2324,11 @@ box
 
 diamond ring
 
-wedding
+engagement
 
 diamond ring
 
-proposal
-
-diamond ring
-
-engagement 
-
-diamond ring
-
-jewelry
+finger
 
 diamond ring
 
@@ -2316,67 +2336,43 @@ girl
 
 diamond ring
 
-woman 
+gold
 
 diamond ring
 
-rich person
+jewelry
+
+diamond ring
+
+jewel
+
+diamond ring
+
+money
+
+diamond ring
+
+person
+
+diamond ring
+
+proposal
+
+diamond ring
+
+rich
 
 diamond ring
 
 silver
 
-doctor
+diamond ring
 
-nurse
+wedding
 
-doctor
+diamond ring
 
-lab coat
-
-doctor
-
-scrubs
-
-doctor
-
-coat
-
-doctor
-
-jacket
-
-doctor
-
-uniform
-
-doctor
-
-white coat 
-
-doctor
-
-injection
-
-doctor
-
-shot
-
-doctor
-
-syringe
-
-doctor
-
-needle 
-
-doctor
-
-stetoscope
-
-doctor
-
-hospital
+woman
 
 doctor
 
@@ -2384,27 +2380,7 @@ clinic
 
 doctor
 
-office 
-
-doctor
-
-medical school
-
-doctor
-
-sick person
-
-doctor
-
-patient 
-
-doctor
-
-health
-
-doctor
-
-pill
+coat
 
 doctor
 
@@ -2412,95 +2388,87 @@ drug
 
 doctor
 
-medicine 
+health
 
-dog
+doctor
 
-walking
+hospital
 
-dog
+doctor
 
-barking
+injection
 
-dog
+doctor
 
-cat
+jacket
 
-dog
+doctor
 
-leash
+lab
 
-dog
+doctor
 
-collar
+medical
 
-dog
+doctor
 
-fur
+medicine
 
-dog
+doctor
 
-tail
+needle
 
-dog
+doctor
 
-garden
+nurse
 
-dog
+doctor
 
-yard
+office
 
-dog
+doctor
 
-park 
+patient
 
-dog
+doctor
 
-home
+person
 
-dog
+doctor
 
-house 
+pill
 
-dog
+doctor
 
-doghouse
+school
 
-dog
+doctor
 
-kennel 
+scrub
 
-dog
+doctor
 
-biscuit
+shot
 
-dog
+doctor
 
-treat 
+sick
 
-dog
+doctor
 
-bone
+stetoscope
 
-dog
+doctor
 
-kibble
+syringe
 
-dog
+doctor
 
-dogfood 
+uniform
 
-dog
+doctor
 
-companion
-
-dog
-
-friend 
-
-dog
-
-pet
+white
 
 dog
 
@@ -2508,27 +2476,95 @@ ball
 
 dog
 
-toy
+bark
 
-dragon
+dog
 
-scales
+biscuit
 
-dragon
+dog
 
-wings
+bone
 
-dragon
+dog
+
+cat
+
+dog
+
+collar
+
+dog
+
+companion
+
+dog
+
+dogfood
+
+dog
+
+doghouse
+
+dog
+
+friend
+
+dog
+
+fur
+
+dog
+
+garden
+
+dog
+
+home
+
+dog
+
+house
+
+dog
+
+kennel
+
+dog
+
+kibble
+
+dog
+
+leash
+
+dog
+
+park
+
+dog
+
+pet
+
+dog
 
 tail
 
-dragon
+dog
 
-teeth
+toy
 
-dragon
+dog
 
-fairy tale
+treat
+
+dog
+
+walk
+
+dog
+
+yard
 
 dragon
 
@@ -2536,11 +2572,7 @@ castle
 
 dragon
 
-den
-
-dragon
-
-cave 
+cave
 
 dragon
 
@@ -2548,15 +2580,19 @@ china
 
 dragon
 
+den
+
+dragon
+
+fairy
+
+dragon
+
+fire
+
+dragon
+
 flame
-
-dragon
-
-fire 
-
-dragon
-
-princess
 
 dragon
 
@@ -2564,47 +2600,31 @@ knight
 
 dragon
 
+princess
+
+dragon
+
+scales
+
+dragon
+
 sword
 
-drugstore
+dragon
 
-sick person
+tail
 
-drugstore
+dragon
 
-pharmacy
+tale
 
-drugstore
+dragon
 
-drugs
+teeth
 
-drugstore
+dragon
 
-pills
-
-drugstore
-
-medicine 
-
-drugstore
-
-prescription
-
-drugstore
-
-make-up
-
-drugstore
-
-doctor
-
-drugstore
-
-money
-
-drugstore
-
-tylenol
+wings
 
 drugstore
 
@@ -2612,51 +2632,71 @@ advil
 
 drugstore
 
-pain killer 
-
-drugstore
-
 candy
 
 drugstore
 
-magazines
+doctor
+
+drugstore
+
+drugs
+
+drugstore
+
+killer
+
+drugstore
+
+magazine
+
+drugstore
+
+make-up
+
+drugstore
+
+medicine
+
+drugstore
+
+money
+
+drugstore
+
+pain
+
+drugstore
+
+person
 
 drugstore
 
 pharmacist
 
-feet
+drugstore
 
-smell
+pharmacy
 
-feet
+drugstore
 
-walking
+pill
 
-feet
+drugstore
 
-running
+prescription
 
-feet
+drugstore
 
-hands
+sick
 
-feet
+drugstore
 
-toes
-
-feet
-
-nails
+tylenol
 
 feet
 
-shoes
-
-feet
-
-socks
+cream
 
 feet
 
@@ -2664,55 +2704,43 @@ floor
 
 feet
 
+hands
+
+feet
+
 nailpolish
 
 feet
 
-cream
+nails
+
+feet
+
+running
+
+feet
+
+shoes
+
+feet
+
+smell
+
+feet
+
+socks
+
+feet
+
+toes
+
+feet
+
+walk
 
 fish
 
-gill
-
-fish
-
-scales
-
-fish
-
-water
-
-fish
-
-sea
-
-fish
-
-ocean 
-
-fish
-
-fish tank
-
-fish
-
-aquarium 
-
-fish
-
-lake
-
-fish
-
-river
-
-fish
-
-worm
-
-fish
-
-food
+aquarium
 
 fish
 
@@ -2720,7 +2748,47 @@ boat
 
 fish
 
-fishing rod
+cat
+
+fish
+
+fish
+
+fish
+
+fishing
+
+fish
+
+food
+
+fish
+
+gill
+
+fish
+
+lake
+
+fish
+
+ocean
+
+fish
+
+river
+
+fish
+
+rod
+
+fish
+
+scales
+
+fish
+
+sea
 
 fish
 
@@ -2728,71 +2796,15 @@ sushi
 
 fish
 
-cat
+tank
 
-flower
-
-grass
-
-flower
-
-petal
-
-flower
-
-smell
-
-flower
-
-scent 
-
-flower
-
-colour
-
-flower
-
-pollen
-
-flower
-
-stem
-
-flower
-
-leaves
-
-flower
-
-vase
-
-flower
-
-garden
-
-flower
-
-soil
-
-flower
-
-pot
-
-flower
-
-tree
-
-flower
+fish
 
 water
 
-flower
+fish
 
-spring
-
-flower
-
-rose
+worm
 
 flower
 
@@ -2800,19 +2812,71 @@ bee
 
 flower
 
+colour
+
+flower
+
+garden
+
+flower
+
+grass
+
+flower
+
+leaves
+
+flower
+
+petal
+
+flower
+
+pollen
+
+flower
+
+pot
+
+flower
+
+rose
+
+flower
+
+scent
+
+flower
+
+smell
+
+flower
+
+soil
+
+flower
+
+spring
+
+flower
+
+stem
+
+flower
+
 sun
 
-fly
+flower
 
-annoying
+tree
 
-fly
+flower
 
-wings
+vase
 
-fly
+flower
 
-eyes
+water
 
 fly
 
@@ -2820,27 +2884,11 @@ air
 
 fly
 
-sky 
-
-fly
-
-spiderweb
-
-fly
-
-garbage
-
-fly
-
-summer
-
-fly
-
 airplane
 
 fly
 
-bug
+annoying
 
 fly
 
@@ -2848,7 +2896,11 @@ bird
 
 fly
 
-swatter
+bug
+
+fly
+
+eyes
 
 fly
 
@@ -2856,11 +2908,59 @@ fruit
 
 fly
 
+garbage
+
+fly
+
+germ
+
+fly
+
 infection
 
 fly
 
-germs 
+sky
+
+fly
+
+spiderweb
+
+fly
+
+summer
+
+fly
+
+swatter
+
+fly
+
+wings
+
+frog
+
+bug
+
+frog
+
+croak
+
+frog
+
+fly
+
+frog
+
+green
+
+frog
+
+hop
+
+frog
+
+insect
 
 frog
 
@@ -2872,7 +2972,19 @@ leap
 
 frog
 
-hop 
+lilypad
+
+frog
+
+pond
+
+frog
+
+prince
+
+frog
+
+princess
 
 frog
 
@@ -2880,11 +2992,11 @@ ribbit
 
 frog
 
-croak 
+slime
 
 frog
 
-green
+swamp
 
 frog
 
@@ -2896,43 +3008,23 @@ tongue
 
 frog
 
-slime
-
-frog
-
-lilypad
-
-frog
-
 water
 
-frog
+garage
 
-pond
+apartment
 
-frog
+garage
 
-swamp
+bicycle
 
-frog
+garage
 
-fly
+bin
 
-frog
+garage
 
-prince
-
-frog
-
-bug
-
-frog
-
-insect 
-
-frog
-
-princess
+car
 
 garage
 
@@ -2940,19 +3032,19 @@ door
 
 garage
 
+garbage
+
+garage
+
 home
 
 garage
 
-appartment
+house
 
 garage
 
-house 
-
-garage
-
-car
+storage
 
 garage
 
@@ -2962,25 +3054,9 @@ garage
 
 trash
 
-garage
-
-garbage bins 
-
-garage
-
-storage
-
-garage
-
-bicycle
-
 gift
 
-cake
-
-gift
-
-wrapping
+birthday
 
 gift
 
@@ -2988,19 +3064,15 @@ bow
 
 gift
 
-ribbon
-
-gift
-
-christmas tree
-
-gift
-
 box
 
 gift
 
-joy
+cake
+
+gift
+
+child
 
 gift
 
@@ -3008,11 +3080,11 @@ christmas
 
 gift
 
-birthday
+holiday
 
 gift
 
-holiday
+joy
 
 gift
 
@@ -3020,39 +3092,19 @@ present
 
 gift
 
+ribbon
+
+gift
+
 santa
 
 gift
 
-child
+tree
 
-girl
+gift
 
-pink
-
-girl
-
-female
-
-girl
-
-cute
-
-girl
-
-pretty 
-
-girl
-
-boy
-
-girl
-
-long hair
-
-girl
-
-dress
+wrap
 
 girl
 
@@ -3060,7 +3112,7 @@ barbie
 
 girl
 
-dolls 
+boy
 
 girl
 
@@ -3068,7 +3120,43 @@ clothes
 
 girl
 
+cute
+
+girl
+
+doll
+
+girl
+
+dress
+
+girl
+
+female
+
+girl
+
 flowers
+
+girl
+
+hair
+
+girl
+
+long
+
+girl
+
+makeup
+
+girl
+
+pink
+
+girl
+
+pretty
 
 girl
 
@@ -3078,9 +3166,41 @@ girl
 
 school
 
-girl
+granny
 
-makeup
+cane
+
+granny
+
+chair
+
+granny
+
+cookie
+
+granny
+
+food
+
+granny
+
+glasses
+
+granny
+
+grandpa
+
+granny
+
+grey
+
+granny
+
+hair
+
+granny
+
+home
 
 granny
 
@@ -3092,39 +3212,11 @@ old
 
 granny
 
-grandpa
+rock
 
 granny
 
-glasses
-
-granny
-
-cane
-
-granny
-
-grey hair
-
-granny
-
-wrinkles
-
-granny
-
-home
-
-granny
-
-food
-
-granny
-
-cookies
-
-granny
-
-rocking chair
+wrinkle
 
 hammer
 
@@ -3132,31 +3224,7 @@ construction
 
 hammer
 
-screwdriver
-
-hammer
-
-metal head
-
-hammer
-
-toolbox
-
-hammer
-
-nail
-
-hammer
-
-wood
-
-hammer
-
-wall
-
-hammer
-
-tool
+hand
 
 hammer
 
@@ -3164,11 +3232,35 @@ handyman
 
 hammer
 
-hand
+head
 
-hands
+hammer
 
-feet
+metal
+
+hammer
+
+nail
+
+hammer
+
+screwdriver
+
+hammer
+
+tool
+
+hammer
+
+toolbox
+
+hammer
+
+wall
+
+hammer
+
+wood
 
 hands
 
@@ -3176,7 +3268,7 @@ arms
 
 hands
 
-legs
+feet
 
 hands
 
@@ -3184,23 +3276,19 @@ fingers
 
 hands
 
-nails
+gloves
 
 hands
 
-ring
+keyboard
 
 hands
 
-mittens
+legs
 
 hands
 
-gloves 
-
-hands
-
-palms
+mitten
 
 hands
 
@@ -3208,59 +3296,19 @@ nailpolish
 
 hands
 
+nails
+
+hands
+
+palm
+
+hands
+
 pencil
 
 hands
 
-keyboard
-
-honey
-
-sweet
-
-honey
-
-sticky
-
-honey
-
-nest
-
-honey
-
-hive 
-
-honey
-
-tea
-
-honey
-
-noneycomb
-
-honey
-
-jar
-
-honey
-
-plastic bottle 
-
-honey
-
-bee
-
-honey
-
-bear
-
-honey
-
-flower
-
-honey
-
-toast
+ring
 
 honey
 
@@ -3268,43 +3316,59 @@ bagel
 
 honey
 
-bread 
+bear
 
-horse
+honey
 
-race
+bee
 
-horse
+honey
 
-riding
+bottle
 
-horse
+honey
 
-mane
+bread
 
-horse
+honey
 
-hooves
+flower
 
-horse
+honey
 
-horseshoes
+hive
 
-horse
+honey
 
-farm
+jar
 
-horse
+honey
 
-barn
+nest
 
-horse
+honey
 
-hay
+noneycomb
 
-horse
+honey
 
-carrot
+plastic
+
+honey
+
+sticky
+
+honey
+
+sweet
+
+honey
+
+tea
+
+honey
+
+toast
 
 horse
 
@@ -3312,23 +3376,51 @@ animal
 
 horse
 
-rider
+barn
 
 horse
 
-jockey 
+carrot
 
 horse
 
 cowboy
 
-hospital
+horse
 
-bed
+farm
 
-hospital
+horse
 
-medicine
+hay
+
+horse
+
+hoof
+
+horse
+
+horseshoe
+
+horse
+
+jockey
+
+horse
+
+mane
+
+horse
+
+race
+
+horse
+
+rider
+
+horse
+
+ride
 
 hospital
 
@@ -3336,19 +3428,15 @@ ambulance
 
 hospital
 
+bed
+
+hospital
+
+desease
+
+hospital
+
 doctor
-
-hospital
-
-patient
-
-hospital
-
-nurse
-
-hospital
-
-needle
 
 hospital
 
@@ -3356,11 +3444,19 @@ illness
 
 hospital
 
-desease 
+medicine
 
-house
+hospital
 
-window
+needle
+
+hospital
+
+nurse
+
+hospital
+
+patient
 
 house
 
@@ -3368,19 +3464,7 @@ bed
 
 house
 
-door
-
-house
-
-roof
-
-house
-
-bricks
-
-house
-
-kitchen
+brick
 
 house
 
@@ -3388,7 +3472,11 @@ chimney
 
 house
 
-furniture
+door
+
+house
+
+family
 
 house
 
@@ -3396,39 +3484,23 @@ fireplace
 
 house
 
+furniture
+
+house
+
 home
 
 house
 
-family
+kitchen
 
-ice-cream
+house
 
-cold
+roof
 
-ice-cream
+house
 
-tasty
-
-ice-cream
-
-cream
-
-ice-cream
-
-milk 
-
-ice-cream
-
-sprinkles
-
-ice-cream
-
-sugar
-
-ice-cream
-
-cone
+window
 
 ice-cream
 
@@ -3436,31 +3508,7 @@ bowl
 
 ice-cream
 
-fridge
-
-ice-cream
-
-freezer 
-
-ice-cream
-
-truck
-
-ice-cream
-
-kid
-
-ice-cream
-
-child 
-
-ice-cream
-
-summer
-
-ice-cream
-
-spoon
+child
 
 ice-cream
 
@@ -3468,31 +3516,59 @@ chocolate
 
 ice-cream
 
+cold
+
+ice-cream
+
+cone
+
+ice-cream
+
+cream
+
+ice-cream
+
+freezer
+
+ice-cream
+
+fridge
+
+ice-cream
+
+kid
+
+ice-cream
+
+milk
+
+ice-cream
+
+spoon
+
+ice-cream
+
+sprinkle
+
+ice-cream
+
+sugar
+
+ice-cream
+
+summer
+
+ice-cream
+
+tasty
+
+ice-cream
+
+truck
+
+ice-cream
+
 vanilla
-
-key
-
-unlock
-
-key
-
-open 
-
-key
-
-metal
-
-key
-
-chain
-
-key
-
-lock
-
-key
-
-door
 
 key
 
@@ -3500,11 +3576,19 @@ car
 
 key
 
-treasure chest
+chain
 
 key
 
-safe
+chest
+
+key
+
+door
+
+key
+
+heart
 
 key
 
@@ -3512,19 +3596,31 @@ house
 
 key
 
-heart
+lock
+
+key
+
+metal
+
+key
+
+open
+
+key
+
+safe
+
+key
+
+treasure
+
+key
+
+unlock
 
 king
 
-queen
-
-king
-
-princess
-
-king
-
-prince
+castle
 
 king
 
@@ -3532,27 +3628,11 @@ crown
 
 king
 
-money
-
-king
-
-power
-
-king
-
 kingdom
 
 king
 
-palace
-
-king
-
-castle 
-
-king
-
-throne
+knight
 
 king
 
@@ -3560,75 +3640,43 @@ leader
 
 king
 
-ruler 
+money
 
 king
 
-knights
+palace
 
-knife
+king
 
-chopping
+power
 
-knife
+king
 
-cutting 
+prince
 
-knife
+king
 
-sharp
+princess
 
-knife
+king
 
-fork
+queen
 
-knife
+king
 
-spoon
+ruler
 
-knife
+king
 
-dish
-
-knife
-
-plate 
-
-knife
-
-cutting board
-
-knife
-
-steel
-
-knife
-
-metal 
-
-knife
-
-kitchen
-
-knife
-
-table
-
-knife
-
-meat
-
-knife
-
-steak 
-
-knife
-
-food
+throne
 
 knife
 
 blood
+
+knife
+
+board
 
 knife
 
@@ -3640,11 +3688,27 @@ butter
 
 knife
 
-meal
+chop
 
 knife
 
-dinner 
+cut
+
+knife
+
+dinner
+
+knife
+
+dish
+
+knife
+
+food
+
+knife
+
+fork
 
 knife
 
@@ -3652,15 +3716,51 @@ killer
 
 knife
 
-murderer 
+kitchen
+
+knife
+
+meal
+
+knife
+
+meat
+
+knife
+
+metal
+
+knife
+
+murderer
+
+knife
+
+plate
+
+knife
+
+sharp
+
+knife
+
+spoon
+
+knife
+
+steak
+
+knife
+
+steel
+
+knife
+
+table
 
 lamp
 
-read
-
-lamp
-
-study
+bedroom
 
 lamp
 
@@ -3672,23 +3772,11 @@ bulb
 
 lamp
 
-shade
-
-lamp
-
-switch
-
-lamp
-
 desk
 
 lamp
 
-table 
-
-lamp
-
-bedroom
+electricity
 
 lamp
 
@@ -3696,11 +3784,7 @@ home
 
 lamp
 
-house 
-
-lamp
-
-night
+house
 
 lamp
 
@@ -3708,11 +3792,35 @@ light
 
 lamp
 
-electricity
+night
+
+lamp
+
+read
+
+lamp
+
+shade
+
+lamp
+
+study
+
+lamp
+
+switch
+
+lamp
+
+table
 
 leash
 
-walk
+cat
+
+leash
+
+collar
 
 leash
 
@@ -3720,7 +3828,7 @@ control
 
 leash
 
-collar
+dog
 
 leash
 
@@ -3732,11 +3840,7 @@ neck
 
 leash
 
-dog
-
-leash
-
-pet
+owner
 
 leash
 
@@ -3744,51 +3848,11 @@ park
 
 leash
 
-owner
+pet
 
 leash
 
-cat
-
-letter
-
-paper
-
-letter
-
-stamp
-
-letter
-
-mail
-
-letter
-
-envelope
-
-letter
-
-mailbox
-
-letter
-
-post office
-
-letter
-
-letter opener
-
-letter
-
-pen
-
-letter
-
-words
-
-letter
-
-pencil
+walk
 
 letter
 
@@ -3796,39 +3860,59 @@ alphabet
 
 letter
 
+envelope
+
+letter
+
 ink
+
+letter
+
+letter
+
+letter
+
+mail
+
+letter
+
+mailbox
 
 letter
 
 mailman
 
-lion
+letter
 
-roar
+office
 
-lion
+letter
 
-tiger
+opener
 
-lion
+letter
 
-teeth
+paper
 
-lion
+letter
 
-hair
+pen
 
-lion
+letter
 
-mane 
+pencil
 
-lion
+letter
 
-fur
+post
 
-lion
+letter
 
-safari
+stamp
+
+letter
+
+words
 
 lion
 
@@ -3836,19 +3920,7 @@ africa
 
 lion
 
-zoo
-
-lion
-
-jungle
-
-lion
-
-savannah
-
-lion
-
-grassland 
+antelope
 
 lion
 
@@ -3856,7 +3928,11 @@ cub
 
 lion
 
-antelope
+deer
+
+lion
+
+fur
 
 lion
 
@@ -3864,7 +3940,23 @@ gazelle
 
 lion
 
-deer 
+grassland
+
+lion
+
+hair
+
+lion
+
+jungle
+
+lion
+
+king
+
+lion
+
+mane
 
 lion
 
@@ -3872,11 +3964,35 @@ meat
 
 lion
 
-king
+roar
+
+lion
+
+safari
+
+lion
+
+savannah
+
+lion
+
+teeth
+
+lion
+
+tiger
+
+lion
+
+zoo
 
 man
 
-woman
+beard
+
+man
+
+car
 
 man
 
@@ -3884,11 +4000,7 @@ children
 
 man
 
-truck
-
-man
-
-car 
+father
 
 man
 
@@ -3900,19 +4012,7 @@ hammer
 
 man
 
-tools 
-
-man
-
-beard
-
-man
-
-muscles
-
-man
-
-father
+muscle
 
 man
 
@@ -3922,45 +4022,17 @@ man
 
 sport
 
-mechanic
+man
 
-fixing
+tools
 
-mechanic
+man
 
-toolbox
+truck
 
-mechanic
+man
 
-tools 
-
-mechanic
-
-dirt
-
-mechanic
-
-grease 
-
-mechanic
-
-wrench
-
-mechanic
-
-jumpsuit
-
-mechanic
-
-overalls
-
-mechanic
-
-uniform 
-
-mechanic
-
-hammer
+woman
 
 mechanic
 
@@ -3968,11 +4040,35 @@ autoshop
 
 mechanic
 
-workshop
+car
 
 mechanic
 
-garage 
+dirt
+
+mechanic
+
+engine
+
+mechanic
+
+fix
+
+mechanic
+
+garage
+
+mechanic
+
+grease
+
+mechanic
+
+hammer
+
+mechanic
+
+jumpsuit
 
 mechanic
 
@@ -3980,11 +4076,11 @@ machine
 
 mechanic
 
-car 
+oil
 
 mechanic
 
-oil
+overall
 
 mechanic
 
@@ -3992,27 +4088,27 @@ tire
 
 mechanic
 
-engine
+toolbox
+
+mechanic
+
+tools
+
+mechanic
+
+uniform
+
+mechanic
+
+workshop
+
+mechanic
+
+wrench
 
 milk
 
-chocolate
-
-milk
-
-white
-
-milk
-
-cookies
-
-milk
-
-calcium
-
-milk
-
-cereal
+baby
 
 milk
 
@@ -4020,19 +4116,43 @@ bag
 
 milk
 
+breakfast
+
+milk
+
+calcium
+
+milk
+
+carton
+
+milk
+
+cereal
+
+milk
+
+cheese
+
+milk
+
+chocolate
+
+milk
+
 container
 
 milk
 
-carton 
+cookie
+
+milk
+
+cow
 
 milk
 
 cup
-
-milk
-
-glass  
 
 milk
 
@@ -4044,7 +4164,15 @@ fridge
 
 milk
 
-grocery store
+glass
+
+milk
+
+goat
+
+milk
+
+grocery
 
 milk
 
@@ -4052,23 +4180,23 @@ jug
 
 milk
 
-breakfast
+store
 
 milk
 
-cow
+white
 
-milk
+monkey
 
-cheese
+banana
 
-milk
+monkey
 
-baby
+circus
 
-milk
+monkey
 
-goat
+fur
 
 monkey
 
@@ -4076,7 +4204,15 @@ hair
 
 monkey
 
-fur 
+human
+
+monkey
+
+jungle
+
+monkey
+
+rainforest
 
 monkey
 
@@ -4088,51 +4224,27 @@ tree
 
 monkey
 
+vine
+
+monkey
+
 zoo
-
-monkey
-
-rainforest
-
-monkey
-
-jungle 
-
-monkey
-
-circus
-
-monkey
-
-vines
-
-monkey
-
-banana
-
-monkey
-
-human
 
 mouse
 
-small size
+basement
+
+mouse
+
+cat
+
+mouse
+
+cheese
 
 mouse
 
 computer
-
-mouse
-
-whiskers
-
-mouse
-
-tail
-
-mouse
-
-trap
 
 mouse
 
@@ -4144,51 +4256,27 @@ house
 
 mouse
 
-basement
+size
 
 mouse
 
-cheese
+small
 
 mouse
 
-cat
+tail
 
-paper
+mouse
 
-writing
+trap
 
-paper
+mouse
 
-white
-
-paper
-
-pencil
-
-paper
-
-pen
-
-paper
-
-printer
-
-paper
-
-school
+whiskers
 
 paper
 
 airplane
-
-paper
-
-origami 
-
-paper
-
-tree
 
 paper
 
@@ -4200,11 +4288,39 @@ homework
 
 paper
 
+letter
+
+paper
+
 notebook
 
 paper
 
-notes 
+notes
+
+paper
+
+origami
+
+paper
+
+pen
+
+paper
+
+pencil
+
+paper
+
+printer
+
+paper
+
+school
+
+paper
+
+scissors
 
 paper
 
@@ -4212,15 +4328,23 @@ stationary
 
 paper
 
-letter 
+tree
 
 paper
 
-scissors
+white
+
+paper
+
+writing
 
 pencil
 
-writing
+case
+
+pencil
+
+desk
 
 pencil
 
@@ -4232,11 +4356,7 @@ eraser
 
 pencil
 
-pen
-
-pencil
-
-sharpener
+exam
 
 pencil
 
@@ -4244,11 +4364,19 @@ graphite
 
 pencil
 
-lead 
+hand
 
 pencil
 
-wood
+lead
+
+pencil
+
+paper
+
+pencil
+
+pen
 
 pencil
 
@@ -4256,7 +4384,7 @@ school
 
 pencil
 
-case
+sharpener
 
 pencil
 
@@ -4264,31 +4392,15 @@ table
 
 pencil
 
-desk 
+test
 
 pencil
 
-hand
+wood
 
 pencil
 
-exam
-
-pencil
-
-test 
-
-pencil
-
-paper
-
-pie
-
-whipped cream
-
-pie
-
-ice-cream
+writing
 
 pie
 
@@ -4296,7 +4408,11 @@ apple
 
 pie
 
-crust
+baker
+
+pie
+
+blueberry
 
 pie
 
@@ -4304,15 +4420,27 @@ cherry
 
 pie
 
-pumpkin
+cream
 
 pie
 
-filling
+crust
 
 pie
 
-blueberry
+dessert
+
+pie
+
+fill
+
+pie
+
+fork
+
+pie
+
+ice-cream
 
 pie
 
@@ -4324,43 +4452,15 @@ plate
 
 pie
 
+pumpkin
+
+pie
+
 thanksgiving
 
 pie
 
-dessert
-
-pie
-
-fork
-
-pie
-
-baker
-
-pilot
-
-flight
-
-pilot
-
-flight attendant
-
-pilot
-
-uniform
-
-pilot
-
-goggles
-
-pilot
-
-cap
-
-pilot
-
-hat 
+whipped
 
 pilot
 
@@ -4368,7 +4468,7 @@ air
 
 pilot
 
-sky 
+airplane
 
 pilot
 
@@ -4376,7 +4476,27 @@ airport
 
 pilot
 
-airplane
+attendant
+
+pilot
+
+cap
+
+pilot
+
+flight
+
+pilot
+
+goggle
+
+pilot
+
+hat
+
+pilot
+
+helicopter
 
 pilot
 
@@ -4384,19 +4504,11 @@ passenger
 
 pilot
 
-helicopter
+sky
 
-plate
+pilot
 
-fork
-
-plate
-
-knife
-
-plate
-
-spoon
+uniform
 
 plate
 
@@ -4404,19 +4516,7 @@ cup
 
 plate
 
-napkin
-
-plate
-
-utensils
-
-plate
-
-food
-
-plate
-
-table
+dinner
 
 plate
 
@@ -4424,7 +4524,19 @@ dishwasher
 
 plate
 
+food
+
+plate
+
+fork
+
+plate
+
 kitchen
+
+plate
+
+knife
 
 plate
 
@@ -4432,19 +4544,35 @@ meal
 
 plate
 
-dinner 
+napkin
 
-police officer
+plate
 
-gun
+spoon
 
-police officer
+plate
 
-uniform
+table
+
+plate
+
+utensil
 
 police officer
 
 badge
+
+police officer
+
+car
+
+police officer
+
+criminal
+
+police officer
+
+gun
 
 police officer
 
@@ -4456,19 +4584,23 @@ law
 
 police officer
 
-criminal
-
-police officer
-
-police car
+police
 
 police officer
 
 siren
 
+police officer
+
+uniform
+
 postman
 
-delivery
+bag
+
+postman
+
+box
 
 postman
 
@@ -4476,35 +4608,7 @@ car
 
 postman
 
-delivery truck 
-
-postman
-
-satchel
-
-postman
-
-bag 
-
-postman
-
-shorts
-
-postman
-
-uniform 
-
-postman
-
-post office
-
-postman
-
-mailbox
-
-postman
-
-mail
+delivery
 
 postman
 
@@ -4512,11 +4616,27 @@ dog
 
 postman
 
+envelope
+
+postman
+
 letter
 
 postman
 
-boxes
+mail
+
+postman
+
+mailbox
+
+postman
+
+office
+
+postman
+
+package
 
 postman
 
@@ -4524,43 +4644,27 @@ parcel
 
 postman
 
-packages 
+post
 
 postman
 
-stamps
+satchel
 
 postman
 
-envelope
+shorts
 
-pumpkin
+postman
 
-orange
+stamp
 
-pumpkin
+postman
 
-candy
+truck
 
-pumpkin
+postman
 
-seeds
-
-pumpkin
-
-patch
-
-pumpkin
-
-field
-
-pumpkin
-
-farm 
-
-pumpkin
-
-halloween
+uniform
 
 pumpkin
 
@@ -4568,7 +4672,27 @@ autumn
 
 pumpkin
 
-pie
+candle
+
+pumpkin
+
+candy
+
+pumpkin
+
+farm
+
+pumpkin
+
+field
+
+pumpkin
+
+halloween
+
+pumpkin
+
+jack-o-lantern
 
 pumpkin
 
@@ -4580,35 +4704,23 @@ light
 
 pumpkin
 
-candle 
+orange
 
 pumpkin
 
-jack-o-lantern
+patch
+
+pumpkin
+
+pie
+
+pumpkin
+
+seed
 
 rabbit
 
-jumping
-
-rabbit
-
-hopping 
-
-rabbit
-
-fur
-
-rabbit
-
-ears
-
-rabbit
-
-tail
-
-rabbit
-
-teeth
+bunny
 
 rabbit
 
@@ -4616,11 +4728,7 @@ burrow
 
 rabbit
 
-hole 
-
-rabbit
-
-grass
+cabbage
 
 rabbit
 
@@ -4632,11 +4740,7 @@ carrot
 
 rabbit
 
-cabbage
-
-rabbit
-
-lettuce 
+ears
 
 rabbit
 
@@ -4644,43 +4748,39 @@ easter
 
 rabbit
 
-bunny
+fur
+
+rabbit
+
+grass
+
+rabbit
+
+hole
+
+rabbit
+
+hop
+
+rabbit
+
+jump
+
+rabbit
+
+lettuce
 
 rabbit
 
 pet
 
-restaurant
+rabbit
 
-table
+tail
 
-restaurant
+rabbit
 
-dish
-
-restaurant
-
-plate 
-
-restaurant
-
-menu
-
-restaurant
-
-food
-
-restaurant
-
-money
-
-restaurant
-
-waitress
-
-restaurant
-
-waiter 
+teeth
 
 restaurant
 
@@ -4688,23 +4788,55 @@ chef
 
 restaurant
 
+dish
+
+restaurant
+
 drink
 
+restaurant
+
+food
+
+restaurant
+
+menu
+
+restaurant
+
+money
+
+restaurant
+
+plate
+
+restaurant
+
+table
+
+restaurant
+
+waiter
+
+restaurant
+
+waitress
+
 river
 
-swimming
+animals
 
 river
 
-lake
+boat
 
 river
 
-ocean
+canoe
 
 river
 
-water
+current
 
 river
 
@@ -4716,27 +4848,7 @@ flow
 
 river
 
-current 
-
-river
-
-trees
-
-river
-
-forest 
-
-river
-
-stones
-
-river
-
-rocks 
-
-river
-
-canoe
+forest
 
 river
 
@@ -4744,35 +4856,35 @@ kayak
 
 river
 
-boat 
+lake
+
+river
+
+ocean
+
+river
+
+rocks
+
+river
+
+stone
+
+river
+
+swim
+
+river
+
+trees
+
+river
+
+water
 
 river
 
 wildlife
-
-river
-
-animals 
-
-santa
-
-reindeer
-
-santa
-
-sled
-
-santa
-
-sleigh 
-
-santa
-
-suit
-
-santa
-
-red coat 
 
 santa
 
@@ -4784,7 +4896,7 @@ cap
 
 santa
 
-hat
+children
 
 santa
 
@@ -4792,27 +4904,47 @@ chimney
 
 santa
 
-gifts
-
-santa
-
-presents 
-
-santa
-
-cookies
-
-santa
-
-children
-
-santa
-
 christmas
 
 santa
 
-elves
+coat
+
+santa
+
+cookie
+
+santa
+
+elf
+
+santa
+
+gift
+
+santa
+
+hat
+
+santa
+
+present
+
+santa
+
+red
+
+santa
+
+reindeer
+
+santa
+
+sled
+
+santa
+
+sleigh
 
 santa
 
@@ -4820,23 +4952,11 @@ snow
 
 santa
 
+suit
+
+santa
+
 tree
-
-school
-
-learning
-
-school
-
-school bus
-
-school
-
-books
-
-school
-
-desk
 
 school
 
@@ -4844,19 +4964,11 @@ blackboard
 
 school
 
-classroom
+book
 
 school
 
-lockers
-
-school
-
-teacher
-
-school
-
-homework
+bus
 
 school
 
@@ -4864,7 +4976,15 @@ children
 
 school
 
-students 
+classmate
+
+school
+
+classroom
+
+school
+
+desk
 
 school
 
@@ -4872,7 +4992,19 @@ exam
 
 school
 
-test 
+friends
+
+school
+
+homework
+
+school
+
+learning
+
+school
+
+locker
 
 school
 
@@ -4880,31 +5012,23 @@ pencil
 
 school
 
-classmates
+school
 
 school
 
-friends 
+student
+
+school
+
+teacher
+
+school
+
+test
 
 scissors
 
-cut
-
-scissors
-
-sharp
-
-scissors
-
-rock
-
-scissors
-
-glue
-
-scissors
-
-knife
+artwork
 
 scissors
 
@@ -4912,23 +5036,15 @@ blade
 
 scissors
 
-metal
-
-scissors
-
-school
-
-scissors
-
-paper
-
-scissors
-
 craft
 
 scissors
 
-artwork
+cut
+
+scissors
+
+glue
 
 scissors
 
@@ -4938,29 +5054,29 @@ scissors
 
 hand
 
-sheep
+scissors
 
-white
+knife
 
-sheep
+scissors
 
-lamb
+metal
 
-sheep
+scissors
 
-dogs
+paper
 
-sheep
+scissors
 
-fur
+rock
 
-sheep
+scissors
 
-wool 
+school
 
-sheep
+scissors
 
-farm
+sharp
 
 sheep
 
@@ -4968,47 +5084,15 @@ barn
 
 sheep
 
-pasture
+dog
 
 sheep
 
-meadow
+farm
 
 sheep
 
-field 
-
-sheep
-
-hay
-
-sheep
-
-grass 
-
-sheep
-
-sweater
-
-sheep
-
-scissors
-
-sheep
-
-shears 
-
-sheep
-
-herder
-
-sheep
-
-shepard 
-
-sheep
-
-wolf
+field
 
 sheep
 
@@ -5016,39 +5100,63 @@ flock
 
 sheep
 
-herd 
+fur
 
-ship
+sheep
 
-fish
+grass
 
-ship
+sheep
 
-cruise
+hay
 
-ship
+sheep
 
-sails
+herd
 
-ship
+sheep
 
-crew
+herd
 
-ship
+sheep
 
-sailor 
+lamb
 
-ship
+sheep
 
-captain
+meadow
 
-ship
+sheep
 
-plank
+pasture
 
-ship
+sheep
 
-mast 
+scissors
+
+sheep
+
+shears
+
+sheep
+
+shepard
+
+sheep
+
+sweater
+
+sheep
+
+white
+
+sheep
+
+wolf
+
+sheep
+
+wool
 
 ship
 
@@ -5056,31 +5164,35 @@ anchor
 
 ship
 
+boat
+
+ship
+
+captain
+
+ship
+
+cargo
+
+ship
+
+crew
+
+ship
+
+cruise
+
+ship
+
+dock
+
+ship
+
+fish
+
+ship
+
 flag
-
-ship
-
-sea
-
-ship
-
-ocean 
-
-ship
-
-water
-
-ship
-
-harbour
-
-ship
-
-port
-
-ship
-
-dock 
 
 ship
 
@@ -5088,23 +5200,23 @@ goods
 
 ship
 
+harbour
+
+ship
+
+mast
+
+ship
+
 merchandise
 
 ship
 
-cargo 
+ocean
 
 ship
 
-boat
-
-ship
-
-titanic
-
-ship
-
-pirate
+passenger
 
 ship
 
@@ -5112,91 +5224,43 @@ people
 
 ship
 
-passenger 
+pirate
+
+ship
+
+plank
+
+ship
+
+port
+
+ship
+
+sailor
+
+ship
+
+sail
+
+ship
+
+sea
+
+ship
+
+titanic
+
+ship
+
+water
 
 shoes
 
-running
+boots
 
 shoes
 
-socks
-
-shoes
-
-shoelaces
-
-shoes
-
-laces 
-
-shoes
-
-velcro
-
-shoes
-
-store
-
-shoes
-
-holt renfrew
-
-shoes
-
-mall 
-
-shoes
-
-floor
-
-shoes
-
-ground 
-
-shoes
-
-shoebox
-
-shoes
-
-box 
-
-shoes
-
-toes
-
-shoes
-
-feet
-
-shoes
-
-high heels
-
-shoes
-
-heels 
-
-shoes
-
-mud
-
-shoes
-
-dirt 
-
-shoes
-
-soles
-
-shoes
-
-leather
-
-shoes
-
-nike
+box
 
 shoes
 
@@ -5204,19 +5268,91 @@ converse
 
 shoes
 
-sneakers 
+dirt
 
 shoes
 
-boots
+feet
 
-spider
+shoes
 
-fear
+floor
 
-spider
+shoes
 
-scare 
+ground
+
+shoes
+
+heel
+
+shoes
+
+high
+
+shoes
+
+holt
+
+shoes
+
+lace
+
+shoes
+
+leather
+
+shoes
+
+mall
+
+shoes
+
+mud
+
+shoes
+
+nike
+
+shoes
+
+renfrew
+
+shoes
+
+running
+
+shoes
+
+shoebox
+
+shoes
+
+shoelace
+
+shoes
+
+sneakers
+
+shoes
+
+socks
+
+shoes
+
+sole
+
+shoes
+
+store
+
+shoes
+
+toes
+
+shoes
+
+velcro
 
 spider
 
@@ -5224,23 +5360,19 @@ black
 
 spider
 
-legs
+bug
 
 spider
 
-venom
-
-spider
-
-poison 
-
-spider
-
-house
+cob
 
 spider
 
 corner
+
+spider
+
+fear
 
 spider
 
@@ -5252,15 +5384,15 @@ halloween
 
 spider
 
+house
+
+spider
+
 insect
 
 spider
 
-bug
-
-spider
-
-shoe
+legs
 
 spider
 
@@ -5268,59 +5400,23 @@ net
 
 spider
 
-cob
+poison
 
 spider
 
-web 
+scare
 
-student
+spider
 
-learning
+shoe
 
-student
+spider
 
-getting education
+venom
 
-student
+spider
 
-studying 
-
-student
-
-teacher
-
-student
-
-computer
-
-student
-
-laptop 
-
-student
-
-backpack
-
-student
-
-school
-
-student
-
-college
-
-student
-
-university 
-
-student
-
-class
-
-student
-
-desk
+web
 
 student
 
@@ -5328,15 +5424,51 @@ assignment
 
 student
 
-homework 
+backpack
 
 student
 
-textbooks
+book
 
 student
 
-books 
+class
+
+student
+
+college
+
+student
+
+computer
+
+student
+
+desk
+
+student
+
+education
+
+student
+
+get
+
+student
+
+homework
+
+student
+
+laptop
+
+student
+
+learning
+
+student
+
+notebook
 
 student
 
@@ -5344,11 +5476,63 @@ pencil
 
 student
 
-notebook
+school
+
+student
+
+study
+
+student
+
+teacher
+
+student
+
+textbook
+
+student
+
+university
 
 table
 
 chair
+
+table
+
+cutlery
+
+table
+
+dinner
+
+table
+
+dish
+
+table
+
+food
+
+table
+
+homework
+
+table
+
+kitchen
+
+table
+
+legs
+
+table
+
+meal
+
+table
+
+plate
 
 table
 
@@ -5358,45 +5542,17 @@ table
 
 wood
 
-table
+teacher
 
-legs
-
-table
-
-kitchen
-
-table
-
-meal
-
-table
-
-dinner 
-
-table
-
-food
-
-table
-
-dish
-
-table
-
-plate 
-
-table
-
-homework
-
-table
-
-cutlery
+apple
 
 teacher
 
-teaching
+blackboard
+
+teacher
+
+book
 
 teacher
 
@@ -5404,23 +5560,7 @@ chalk
 
 teacher
 
-whiteboard
-
-teacher
-
-blackboard 
-
-teacher
-
-books
-
-teacher
-
-school
-
-teacher
-
-desk
+class
 
 teacher
 
@@ -5428,31 +5568,27 @@ classroom
 
 teacher
 
-apple
-
-teacher
-
-class
-
-teacher
-
-students 
+desk
 
 teacher
 
 homework
 
-tree
+teacher
 
-green
+school
 
-tree
+teacher
 
-leaves
+student
 
-tree
+teacher
 
-branches
+teach
+
+teacher
+
+whiteboard
 
 tree
 
@@ -5460,27 +5596,11 @@ bark
 
 tree
 
-roots
+bird
 
 tree
 
-fruit
-
-tree
-
-nest
-
-tree
-
-trunk
-
-tree
-
-wood
-
-tree
-
-forrest 
+branch
 
 tree
 
@@ -5488,11 +5608,35 @@ earth
 
 tree
 
-soil
+forrest
 
 tree
 
-ground 
+fruit
+
+tree
+
+green
+
+tree
+
+ground
+
+tree
+
+leaves
+
+tree
+
+nest
+
+tree
+
+root
+
+tree
+
+soil
 
 tree
 
@@ -5500,11 +5644,15 @@ squirrel
 
 tree
 
+trunk
+
+tree
+
 water
 
 tree
 
-bird
+wood
 
 vase
 
@@ -5512,23 +5660,7 @@ break
 
 vase
 
-pretty
-
-vase
-
-water
-
-vase
-
 crystal
-
-vase
-
-glass 
-
-vase
-
-table
 
 vase
 
@@ -5538,9 +5670,21 @@ vase
 
 flower
 
-waitress
+vase
 
-waiter
+glass
+
+vase
+
+pretty
+
+vase
+
+table
+
+vase
+
+water
 
 waitress
 
@@ -5548,19 +5692,7 @@ apron
 
 waitress
 
-paper
-
-waitress
-
-notepad 
-
-waitress
-
-menu
-
-waitress
-
-restaurant
+drink
 
 waitress
 
@@ -5568,7 +5700,11 @@ food
 
 waitress
 
-tips
+girl
+
+waitress
+
+menu
 
 waitress
 
@@ -5576,31 +5712,27 @@ money
 
 waitress
 
+notepad
+
+waitress
+
+paper
+
+waitress
+
 plate
 
 waitress
 
-drink
+restaurant
 
 waitress
 
-girl
+tip
 
-witch
+waitress
 
-green
-
-witch
-
-wizard
-
-witch
-
-pumpkin
-
-witch
-
-broomstick
+waiter
 
 witch
 
@@ -5608,55 +5740,11 @@ besom
 
 witch
 
-broom 
+broom
 
 witch
 
-pot
-
-witch
-
-cauldron 
-
-witch
-
-hat
-
-witch
-
-spell
-
-witch
-
-magic 
-
-witch
-
-pointy
-
-witch
-
-long nose 
-
-witch
-
-wart
-
-witch
-
-cat
-
-witch
-
-wand
-
-witch
-
-coat
-
-witch
-
-dark clothing
+broomstick
 
 witch
 
@@ -5664,7 +5752,31 @@ cape
 
 witch
 
-robe 
+cat
+
+witch
+
+cauldron
+
+witch
+
+cloth
+
+witch
+
+coat
+
+witch
+
+dark
+
+witch
+
+evil
+
+witch
+
+green
 
 witch
 
@@ -5672,35 +5784,51 @@ halloween
 
 witch
 
-evil
+hat
 
-woman
+witch
 
-cooking
+long
 
-woman
+witch
 
-man
+magic
 
-woman
+witch
 
-children
+nose
 
-woman
+witch
 
-long hair
+pointy
 
-woman
+witch
 
-dress
+pot
 
-woman
+witch
 
-shoes
+pumpkin
 
-woman
+witch
 
-clothes
+robe
+
+witch
+
+spell
+
+witch
+
+wand
+
+witch
+
+wart
+
+witch
+
+wizard
 
 woman
 
@@ -5708,15 +5836,27 @@ beauty
 
 woman
 
+children
+
+woman
+
+clothes
+
+woman
+
+cooking
+
+woman
+
+dress
+
+woman
+
+hair
+
+woman
+
 jewellery
-
-woman
-
-purse
-
-woman
-
-mascara
 
 woman
 
@@ -5724,9 +5864,29 @@ lipstick
 
 woman
 
-makeup 
+long
+
+woman
+
+makeup
+
+woman
+
+man
+
+woman
+
+mascara
 
 woman
 
 mother
+
+woman
+
+purse
+
+woman
+
+shoes
 

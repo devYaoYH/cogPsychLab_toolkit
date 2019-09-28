@@ -83,10 +83,14 @@ GRAPH_FILE = args[2]
 # output file to store paths
 OUTPUT_PATH_FILE = args[3]
 output_path_file_split = OUTPUT_PATH_FILE.split("\\")
-output_path_file_split[-1] = "error_"+output_path_file_split[-1]
+extension = output_path_file_split[-1].split('.')[-1]
+output_path_file_split[-1] = '.'.join(output_path_file_split[-1].split('.')[:-1]) + "_error." + extension
 OUTPUT_PATH_ERROR_FILE = "\\".join(output_path_file_split)
 # is our graph directed?
 is_directed = FLAG_DIRECTED in flags
+
+print(OUTPUT_PATH_FILE)
+print(OUTPUT_PATH_ERROR_FILE)
 
 alpha_set = set(list("ABCDEFGHIJKLMNOPQRSTUVWXYZ".lower()))
 unrecognized_word_list = set()
@@ -137,9 +141,9 @@ word_t = time.time()
 word_list = []
 with open(WORD_FILE, 'r') as fin:
     for line in fin:
-        line_data = line.split(',')
+        line_data = line.strip().split(',')
         prime = line_data[0].lower()
-        target = " ".join(line_data[1]).lower()
+        target = line_data[1].lower()
         word_list.append((prime, target))
 debug_time("Loading word list...", word_t, time.time())
 
@@ -152,9 +156,9 @@ graph_t = time.time()
 print("Loading graph from file: " + GRAPH_FILE, file=sys.stderr)
 with open(GRAPH_FILE, 'r') as fin:
     for line in fin:
-        line_data = line.split()
+        line_data = line.strip().split(',')
         source = line_data[0].lower()
-        destination = " ".join(line_data[1:]).lower()
+        destination = line_data[1].lower()
         graph_word_list.add(source)
         graph_word_list.add(destination)
         try:
@@ -178,6 +182,8 @@ for pair in word_list:
         print("Scanning...[{}]".format(pair[0][0].upper()), file=sys.stderr)
         alpha_set.remove(pair[0][0])
     word_paths[pair] = bfs(graph, pair[0], pair[1])
+    if (is_directed):
+        word_paths[(pair[1], pair[0])] = bfs(graph, pair[1], pair[0])
 with open(OUTPUT_PATH_ERROR_FILE, 'w+') as fout:
     err_list = sorted(list(unrecognized_word_list))
     for word in err_list:
@@ -186,13 +192,20 @@ with open(OUTPUT_PATH_ERROR_FILE, 'w+') as fout:
 with open(OUTPUT_PATH_FILE, 'w+') as fout:
     for pair in word_list:
         if (word_paths[pair] is not None):
-            fout.write("{},{},{},\"".format(len(word_paths[pair])-1, pair[0], pair[1]))
+            fout.write("{},{},{},\"".format(pair[0], pair[1], len(word_paths[pair])-1))
             for node in word_paths[pair][:-1]:
                 fout.write("{},".format(node))
             fout.write("{}".format(word_paths[pair][-1]))
-            fout.write('\"\n')
+            fout.write('\"')
+            if (is_directed):
+                fout.write(",{},\"".format(len(word_paths[(pair[1], pair[0])])-1))
+                for node in word_paths[(pair[1], pair[0])][:-1]:
+                    fout.write("{},".format(node))
+                fout.write("{}".format(word_paths[(pair[1], pair[0])][-1]))
+                fout.write('\"')
+            fout.write('\n')
             fout.flush()
         else:
-            fout.write("-1,{},{},\"NOT FOUND\"\n".format(pair[0], pair[1]))
+            fout.write("{},{},-1,\"NOT FOUND\"\n".format(pair[0], pair[1]))
             fout.flush()
 debug_time("Paths found...", search_t, time.time())
