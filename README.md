@@ -20,8 +20,7 @@
 3) `parse_lsa.py` -> WEB -> `extract_lsa_output.py` Formats our word pairs list into lsa.colorado.edu format and extracts LSA cosines from web query output.
 
 ## Data Pipeline Diagram
-`In-Progress`
-![Data Pipeline Sketch](data_pipeline.PNG)
+![Data Pipeline Sketch](data_pipeline_full.PNG)
 
 *running any .py script without supplying arguments will print a helpful usage message specifying what arguments needs to be supplied.* **Example:** `Usage: python .\search_graph.py <word_list> <.graph file> <output file name> [ -d ]`
 
