@@ -26,21 +26,21 @@
 
 *see bottom for sample command line execution*
 
-## Generating Graphs
+### Generating Graphs
 
 Use `filter_graph.py` and supply with some raw data file in `prime \t target \t path_length` format to extract all unit-length edge node pairs. Uses minimal memory and scans 600MB raw data file in 35s. Generates `.graph` file (this file extension needs to be specified).
 
-## Pre-processing: Generating word list
+### Pre-processing: Generating word list
 
 Use `extract_words.py` then `filter_words.py` to fix grammar/spelling mistakes and supply required arguments to generate list of \<prime, target\> pair queries from .csv file.
 
 We should have a `.csv` file with `prime,target` on each line, let's call this `word_pairs.csv`.
 
-## Searching for shortest paths in Graph
+### Searching for shortest paths in Graph
 
 Use `search_graph.py` and supply `word_pairs.csv` and `.graph` file to generate paths for each word pair. Graph is loaded into memory and a bfs is run with memoization to search for paths.
 
-## Extracting other values
+### Extracting other values
 
 Use `extract_acn_val.py` to extract acn values for pairs in `word_pairs.csv` from raw ACN graph data file.
 
@@ -48,7 +48,7 @@ Use `parse_lsa.py` to transform `word_pairs.csv` file to lsa web format (newline
 
 Use `extract_lsa_output.py` to extract cosines from web output.
 
-#### Sample search script output
+## Sample search script output
 ```
 PS > python .\search_graph.py .\word_pairs_filtered.txt .\graph\pat
 hlengths_undirected_step_distance_pmfg.graph .\paths\pathlengths_undirected_step_distance_pmfg.csv
@@ -58,7 +58,7 @@ Graph Loaded... [53.012ms]
 Paths found... [23980.844ms]
 ```
 
-#### Sample execution order
+## Sample execution order
 ```
 #Pipeline starting from word_pairs_single.csv (raw copy of first 2 columns of MOESM3_ESM excel file)
 
