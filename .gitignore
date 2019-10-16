@@ -1,3 +1,4 @@
 #Ignore all large data files
 data/*
-*.data
+#Ignore cache files (we can rebuild)
+cache/*
