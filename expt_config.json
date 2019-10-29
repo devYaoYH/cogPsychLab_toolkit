@@ -1,0 +1,269 @@
+{
+	"name": "test_experiment",
+	"tests": [
+		{
+			"name": "nelson_0_01",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.01
+			}
+		},
+		{
+			"name": "nelson_0_015",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.015
+			}
+		},
+		{
+			"name": "nelson_0_02",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.02
+			}
+		},
+		{
+			"name": "nelson_2_01",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 2,
+				"cutoff": 0.01
+			}
+		},
+		{
+			"name": "nelson_2_02",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 2,
+				"cutoff": 0.02
+			}
+		},
+		{
+			"name": "nelson_3_01",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 3,
+				"cutoff": 0.01
+			}
+		},
+		{
+			"name": "nelson_3_02",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 3,
+				"cutoff": 0.02
+			}
+		},
+		{
+			"name": "nelson_0_03",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.03
+			}
+		},
+		{
+			"name": "nelson_0_05",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.05
+			}
+		},
+		{
+			"name": "nelson_0_07",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.07
+			}
+		},
+		{
+			"name": "nelson_1_03",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 1,
+				"cutoff": 0.03
+			}
+		},
+		{
+			"name": "nelson_1_05",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 1,
+				"cutoff": 0.05
+			}
+		},
+		{
+			"name": "nelson_1_07",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 1,
+				"cutoff": 0.07
+			}
+		},
+		{
+			"name": "nelson_0_11",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.11
+			}
+		},
+		{
+			"name": "nelson_0_13",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.13
+			}
+		},
+		{
+			"name": "nelson_0_16",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.16
+			}
+		},
+		{
+			"name": "nelson_0_20",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.20
+			}
+		},
+		{
+			"name": "nelson_0_25",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.25
+			}
+		},
+		{
+			"name": "nelson_0_31",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.31
+			}
+		},
+		{
+			"name": "nelson_0_38",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.38
+			}
+		},
+		{
+			"name": "nelson_0_46",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.46
+			}
+		},
+		{
+			"name": "nelson_0_55",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.55
+			}
+		},
+		{
+			"name": "nelson_0_65",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.65
+			}
+		},
+		{
+			"name": "nelson_0_76",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.76
+			}
+		},
+		{
+			"name": "nelson_0_89",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 0.89
+			}
+		},
+		{
+			"name": "nelson_0_100",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 0,
+				"cutoff": 1.0
+			}
+		},
+		{
+			"name": "nelson_1_11",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 1,
+				"cutoff": 0.11
+			}
+		},
+		{
+			"name": "nelson_1_13",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 1,
+				"cutoff": 0.13
+			}
+		},
+		{
+			"name": "nelson_3_11",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 3,
+				"cutoff": 0.11
+			}
+		},
+		{
+			"name": "nelson_3_13",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 3,
+				"cutoff": 0.13
+			}
+		},
+		{
+			"name": "nelson_3_16",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 3,
+				"cutoff": 0.16
+			}
+		},
+		{
+			"name": "nelson_3_20",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 3,
+				"cutoff": 0.20
+			}
+		},
+		{
+			"name": "nelson_3_25",
+			"filter": "cosine",
+			"filter_configs": {
+				"min_edges": 3,
+				"cutoff": 0.25
+			}
+		}
+	]
+}

@@ -19,13 +19,14 @@ argv = sys.argv
 FLAGS = set([])
 
 # Number of required arguments
-REQUIRED_ARGS = ["output_name"]
+REQUIRED_ARGS = []
 OPTIONAL_ARGS = {
     "CACHE": "cache_path",
     "GRAPH": "path_to_save_graphs",
     "ANN": "index_tree_path",
     "DIC": "word_to_index_dictionary_for_tree",
-    "WORD": "word_list"
+    "WORD": "word_list",
+    "CONFIG": "configuration file for multiple graphs"
 }
 
 ############################################
@@ -81,11 +82,14 @@ if (len(args) < NUM_REQUIRED_ARGS):
 
 # Configuration Parameters
 VSM_DIMS = 300
-CACHE_PATH = "C:/_YaoYiheng/_Projects/NLP_AssocMap/graph_processing/cache/" if optional_args["CACHE"] is None else optional_args["CACHE"]
-GRAPH_PATH = "C:/_YaoYiheng/_Projects/NLP_AssocMap/graph_processing/graph/" if optional_args["GRAPH"] is None else optional_args["GRAPH"]
+CACHE_PATH = "C:/_YaoYiheng/Projects/_CogPsychLab/cogPsychLab_toolkit/cache/" if optional_args["CACHE"] is None else optional_args["CACHE"]
+GRAPH_PATH = "C:/_YaoYiheng/Projects/_CogPsychLab/cogPsychLab_toolkit/graph/" if optional_args["GRAPH"] is None else optional_args["GRAPH"]
 ANN_TREE = "GoogleNews_index_nelson.ann" if optional_args["ANN"] is None else optional_args["ANN"]
 DIC_FILE = "GoogleNews_wordlist_nelson.txt" if optional_args["DIC"] is None else optional_args["DIC"]
 WORD_FILE = "test_sets/nelson_words.txt" if optional_args["WORD"] is None else optional_args["WORD"]
+CONFIG_FILE = optional_args["CONFIG"]
+
+print("GENERATING GRAPH", file=sys.stderr)
 
 # Load query word file
 word_list = []
@@ -125,8 +129,27 @@ def write_all(graph, fname):
 #######################
 # CONFIGURATION FUNCS #
 #######################
+def cosine_filter_wrapper(source, args):
+    unwrapped_args = {
+        'min_edges': 1,
+        'cutoff': 0.1,
+        'k': 10
+    }
+    args_format = {
+        'min_edges': int,
+        'cutoff': float,
+        'k': int
+    }
+    for key in unwrapped_args.keys():
+        if (key in args):
+            unwrapped_args[key] = args_format[key](args[key])
+    return cosine_filter(source, unwrapped_args['min_edges'], unwrapped_args['cutoff'], unwrapped_args['k'])
+
 def cosine_filter(source, min_edges=1, cutoff=0.1, k=10):
     li = sorted([(abs(1-model.get_distance(source, t)), t) for t in model.get_nns_by_item(source, k)], key=lambda x: x[0])
+    while (li[-1][0] < cutoff):
+        k *= 2
+        li = sorted([(abs(1-model.get_distance(source, t)), t) for t in model.get_nns_by_item(source, k)], key=lambda x: x[0])
     ret_nodes = [(t, v) for v, t in li[:min_edges]]
     for value, target in li[min_edges:]:
         if (value > cutoff):
@@ -134,11 +157,15 @@ def cosine_filter(source, min_edges=1, cutoff=0.1, k=10):
         ret_nodes.append((target, value))
     return ret_nodes
 
+filters = {
+    'cosine': cosine_filter_wrapper
+}
+
 ##################
 # GENERATE GRAPH #
 ##################
 # Generates graph given file format and node-node connection function
-def generate_graph(save_format=None, fname=None, edge_filter=None):
+def generate_graph(save_format=None, fname=None, edge_filter=None, args=None):
     # Default Behavior
     if (save_format is None):
         save_format = write_json
@@ -147,7 +174,9 @@ def generate_graph(save_format=None, fname=None, edge_filter=None):
     else:
         fname = f"{GRAPH_PATH}{fname}"
     if (edge_filter is None):
-        edge_filter = cosine_filter
+        edge_filter = cosine_filter_wrapper
+    if (args is None):
+        args = dict()
 
     # Construct Graph object
     graph = dict()
@@ -160,9 +189,42 @@ def generate_graph(save_format=None, fname=None, edge_filter=None):
     # Connect nodes
     for w in graph['nodes']:
         source = word_dic[w]
-        for target, value in edge_filter(source):
+        for target, value in edge_filter(source, args):
             graph['edges'].append((source, target, value))
     # Save graph
     save_format(graph, fname)
 
-generate_graph(save_format=write_all, fname=args[1])
+if __name__ == '__main__':
+    if (CONFIG_FILE is None):
+        generate_graph(save_format=write_all, fname=input("Output graph name: "))
+    else:
+        with open(CONFIG_FILE, 'r') as fin:
+            expt_configs = json.load(fin)
+        if ('tests' not in expt_configs):
+            print("No experiments defined in configuration file:")
+            print(json.dumps(expt_configs))
+            exit()
+        if ('name' in expt_configs):
+            expt_name = expt_configs['name']
+        else:
+            expt_name = input("Experiment name: ")
+        log_file = f"{expt_name}_log.json"
+        # Start experimenting!
+        with open(log_file, 'w+') as fout:
+            for experiment in expt_configs['tests']:
+                try:
+                    if ('name' in experiment):
+                        g_name = experiment['name']
+                    else:
+                        print(json.dumps(experiment))
+                        g_name = input("Please input graph name: ")
+                    g_filter = filters[experiment['filter']]
+                    g_filter_configs = experiment['filter_configs']
+                except Exception as e:
+                    print("Incorrectly formatted experiment:")
+                    print(e)
+                    continue
+                print("Running experiment:")
+                print(json.dumps(experiment))
+                if (input("Generate Graph (y/n)?") == 'y'):
+                    generate_graph(save_format=utils.write_raw, fname=g_name, edge_filter=g_filter, args=g_filter_configs)
