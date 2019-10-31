@@ -72,6 +72,15 @@ if (len(args) < NUM_REQUIRED_ARGS):
 # END OF PARSING - arguments in: args, optional_args, undefined_args, flags #
 #############################################################################
 
+def print_info():
+    print("\n##### USAGE INFORMATION #####")
+    print("Type 'y' to approve of fix when prompted <ENTER> if we wish to skip the suggested fix.")
+    print("Alternatively, type in manually fixed word. Example:")
+    print("Matched: s (s$) Fix: gramers->gramer (y/n)? gamer")
+    print("After all prompts are resolved, an output of replacements made will be printed.")
+    print("Please save a copy to keep track of changes made in data.\n")
+    print("Scanning through word list for grammar normalization....")
+
 # word pair .csv file
 WORD_FILE = args[1]
 WHITE_LIST = optional_args['words']
@@ -215,6 +224,7 @@ if (WHITE_LIST is not None):
 ############################
 # READ WORD LIST FROM FILE #
 ############################
+print_info()
 word_t = time.time()
 word_list = set()
 fixed_words = dict()
@@ -236,7 +246,7 @@ with open(WORD_FILE, 'r') as fin:
                 match_list = re.search(pattern, prime)
                 if (match_list is not None):
                     fixed_prime = prime[:match_list.span()[0]] + replacement
-                    print("Matched: {} ({}) Fix: {}->{}?".format(match_list.group(), pattern, prime, fixed_prime), end="")
+                    print("Matched: {} ({}) Fix: {}->{} (y/n)?".format(match_list.group(), pattern, prime, fixed_prime), end="")
                     fixed_word = input().strip()
                     if (len(fixed_word) > 1):
                         fixed_words[prime] = fixed_word
@@ -264,7 +274,7 @@ with open(WORD_FILE, 'r') as fin:
                 match_list = re.search(pattern, target)
                 if (match_list is not None):
                     fixed_target = target[:match_list.span()[0]] + replacement
-                    print("Matched: {} ({}) Fix: {}->{}?".format(match_list.group(), pattern, target, fixed_target), end="")
+                    print("Matched: {} ({}) Fix: {}->{} (y/n)?".format(match_list.group(), pattern, target, fixed_target), end="")
                     fixed_word = input().strip()
                     if (len(fixed_word) > 1):
                         fixed_words[target] = fixed_word

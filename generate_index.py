@@ -11,7 +11,7 @@ def debug_time(msg, init, now):
 DATA_PATH = 'C:/_YaoYiheng/_Projects/NLP_AssocMap/linguistic_association_networks/data/'
 VSM_BIN = "GoogleNews-vectors-negative300.bin"
 VSM_LIMIT = 100000
-WORD_FILE = "../test_sets/nelson_words.txt"
+WORD_FILE = "test_sets/nelson_words.txt"
 word_list_name = "nelson"
 
 # Optionally load word file

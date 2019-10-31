@@ -77,15 +77,15 @@ if (len(args) < NUM_REQUIRED_ARGS):
 #############################################################################
 
 # word pair .csv file
-WORD_FILE = args[1].replace('/', '\\')
+WORD_FILE = args[1]
 # graph file with (from, to) word pairs representing an edge of distance 1 in graph
-GRAPH_FILE = args[2].replace('/', '\\')
+GRAPH_FILE = args[2]
 # output file to store paths
-OUTPUT_PATH_FILE = args[3].replace('/', '\\')
-output_path_file_split = OUTPUT_PATH_FILE.split("\\")
+OUTPUT_PATH_FILE = args[3].replace('\\', '/')
+output_path_file_split = OUTPUT_PATH_FILE.split("/")
 extension = output_path_file_split[-1].split('.')[-1]
 output_path_file_split[-1] = '.'.join(output_path_file_split[-1].split('.')[:-1]) + "_error." + extension
-OUTPUT_PATH_ERROR_FILE = "\\".join(output_path_file_split)
+OUTPUT_PATH_ERROR_FILE = "/".join(output_path_file_split)
 # is our graph directed?
 is_directed = FLAG_DIRECTED in flags
 

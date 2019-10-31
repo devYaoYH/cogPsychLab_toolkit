@@ -82,8 +82,8 @@ if (len(args) < NUM_REQUIRED_ARGS):
 
 # Configuration Parameters
 VSM_DIMS = 300
-CACHE_PATH = "C:/_YaoYiheng/Projects/_CogPsychLab/cogPsychLab_toolkit/cache/" if optional_args["CACHE"] is None else optional_args["CACHE"]
-GRAPH_PATH = "C:/_YaoYiheng/Projects/_CogPsychLab/cogPsychLab_toolkit/graph/" if optional_args["GRAPH"] is None else optional_args["GRAPH"]
+CACHE_PATH = "cache/" if optional_args["CACHE"] is None else optional_args["CACHE"]
+GRAPH_PATH = "graph/" if optional_args["GRAPH"] is None else optional_args["GRAPH"]
 ANN_TREE = "GoogleNews_index_nelson.ann" if optional_args["ANN"] is None else optional_args["ANN"]
 DIC_FILE = "GoogleNews_wordlist_nelson.txt" if optional_args["DIC"] is None else optional_args["DIC"]
 WORD_FILE = "test_sets/nelson_words.txt" if optional_args["WORD"] is None else optional_args["WORD"]
