@@ -83,3 +83,21 @@ python search_graph.py word_pairs_single_filtered_fixed.csv graph\pathlengths_un
 python search_graph.py word_pairs_single_filtered_fixed.csv graph\pathlengths_undirected_step_distance.graph results\word_pairs_single_filtered_fixed_undirected_step_distance.csv
 python search_graph.py word_pairs_single_filtered_fixed.csv graph\pathlengths_undirected_step_distance_pmfg.graph results\word_pairs_single_filtered_fixed_undirected_step_distance_pmfg.csv
 ```
+
+## /bin convenience scripts
+
+To further automate the task of fixing a (prime,target) .csv file for grammar/spelling errors as well as for searching paths in a graph I have provided 2 convenience scripts in `/bin` folder in the repository. Use `.bat` batch files on Windows systems and `.sh` bash files on MacOS/Linux systems.
+
+With `.sh` files, if you cannot immediately double click to run it as an executable, please try the following command after changing the directory of your terminal to the `/bin` folder:
+```
+chmod +x *.sh
+```
+Or if it gives a permission error, try `sudo chmod +x *.sh` instead.
+
+Another command you can try if it doesn't run with double-click is `./fix_wordpairs.sh` or `./search_graph.sh` by prepending `./` to a file on Unix (MacOS/Linux) systems you will run it as if it is an executable.
+
+On Windows, you can just double click on the `.bat` files and they should run.
+
+Use `fix_wordpairs.bat` or `fix_wordpairs.sh` to fix a `.csv` of (prime,target) pairs.
+
+Use `search_graph.bat` or `search_graph.sh` to run a search with a given set of word pairs in a graph.
