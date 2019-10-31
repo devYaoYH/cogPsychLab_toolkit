@@ -13,3 +13,4 @@ if "%is_d%"=="y" (
 ) else (
 	python search_graph.py %word_file% %graph_file% %output_file% -d
 )
+pause
