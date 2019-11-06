@@ -27,8 +27,10 @@ for expt_config in graph_plotting_params['tests']:
 	name = expt_config['name']
 	min_edges = expt_config['filter_configs']['min_edges']
 	cutoff = expt_config['filter_configs']['cutoff']
-
-	graphs[name] = ((cutoff, min_edges), graph_analysis_results[graph_analysis_name_labels[name]])
+	try:
+		graphs[name] = ((cutoff, min_edges), graph_analysis_results[graph_analysis_name_labels[name]])
+	except KeyError:
+		print("Graph {} ANALYSIS NOT FOUND".format(name))
 
 # Plot details contained in our graphs list
 x = []
@@ -37,10 +39,10 @@ z = []
 
 for name, graph in graphs.items():
 	cx = graph[1]['avg_connectivity']
-	cy = graph[1]['avg_clustering']
+	cy = graph[1]['avg_pathlength']
 	cz = graph[0][0]
-	# if (cx > 12.5):
-	# 	continue
+	if (cx > 25):
+		continue
 	x.append(cx)
 	y.append(cy)
 	z.append(cz)
@@ -51,7 +53,7 @@ baseline_graphs = ['pathlengths_directed_step_distance', 'pathlengths_undirected
 for name in baseline_graphs:
 	data = graph_analysis_results[graph_analysis_name_labels[name]]
 	cx = data['avg_connectivity']
-	cy = data['avg_clustering']
+	cy = data['avg_pathlength']
 	cz = 0
 	x.append(cx)
 	y.append(cy)
@@ -61,7 +63,7 @@ for name in baseline_graphs:
 ax.scatter(x, y, z, c='r', marker='o')
 
 ax.set_xlabel('avg_connectivity')
-ax.set_ylabel('avg_clustering')
+ax.set_ylabel('avg_pathlength')
 ax.set_zlabel('Cosine Cutoff')
 
 plt.show()
