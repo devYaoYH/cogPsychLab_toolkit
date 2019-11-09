@@ -131,13 +131,18 @@ def read_wordpairs(fname):
 def get_nelson_dist():
 	data = []
 	print("Computing O(N^2) for {} nodes".format(len(word_list)))
-	for i in range(len(word_list)):
-		for j in range(i, len(word_list)):
-			w1 = word_list[i]
-			w2 = word_list[j]
-			if (w1 != w2 and w1 in word_dic and w2 in word_dic):
-				# Add cosine to data
-				data.append(abs(1-model.get_distance(word_dic[w1], word_dic[w2])))
+	with open("cosine.csv", 'w+') as fout:
+		for i in range(len(word_list)):
+			for j in range(i, len(word_list)):
+				w1 = word_list[i]
+				w2 = word_list[j]
+				if (w1 != w2 and w1 in word_dic and w2 in word_dic):
+					# Add cosine to data
+					raw_dist = model.get_distance(word_dic[w1], word_dic[w2]) #IMPT!!!!
+					dist = 1-(raw_dist**2)/2
+					if (abs(dist) > 0.70):
+						fout.write("{},{},{}\n".format(w1, w2, dist))
+					data.append(dist)
 	return data
 
 def get_nelson_rand_dist(t=0.4):
@@ -176,9 +181,9 @@ def log_data(data):
 		json.dump(data, fout)
 
 # Generate data to plot
-# data = get_nelson_dist()
+data = get_nelson_dist()
 # data = get_demasking_dist()
-data = get_nelson_rand_dist()
+# data = get_nelson_rand_dist()
 print("Generated {} pairs".format(len(data)))
 #log_data(data)
 
