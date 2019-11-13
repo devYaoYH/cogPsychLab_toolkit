@@ -2,6 +2,7 @@ from annoy import AnnoyIndex
 import matplotlib.pyplot as plt
 import numpy as np
 import random
+import utils
 import json
 import time
 import sys
@@ -116,74 +117,58 @@ model = AnnoyIndex(VSM_DIMS)
 model.load(f"{CACHE_PATH}{ANN_TREE}")
 debug_time(f"Annoying Tree Loaded from {ANN_TREE}", load_t, time.time())
 
-def read_wordpairs(fname):
-	word_pairs = []
-	word_t = time.time()
-	with open(fname, 'r') as fin:
-	    for line in fin:
-	        line_data = line.strip().split(',')
-	        prime = line_data[0].lower()
-	        target = line_data[1].lower()
-	        word_pairs.append((prime, target))
-	debug_time("Loading word list...", word_t, time.time())
-	return word_pairs
-
 def get_nelson_dist():
-	data = []
-	print("Computing O(N^2) for {} nodes".format(len(word_list)))
-	with open("cosine.csv", 'w+') as fout:
-		for i in range(len(word_list)):
-			for j in range(i, len(word_list)):
-				w1 = word_list[i]
-				w2 = word_list[j]
-				if (w1 != w2 and w1 in word_dic and w2 in word_dic):
-					# Add cosine to data
-					raw_dist = model.get_distance(word_dic[w1], word_dic[w2]) #IMPT!!!!
-					dist = 1-(raw_dist**2)/2
-					if (abs(dist) > 0.70):
-						fout.write("{},{},{}\n".format(w1, w2, dist))
-					data.append(dist)
-	return data
+    data = []
+    print("Computing O(N^2) for {} nodes".format(len(word_list)))
+    with open("cosine.csv", 'w+') as fout:
+        for i in range(len(word_list)):
+            for j in range(i, len(word_list)):
+                w1 = word_list[i]
+                w2 = word_list[j]
+                if (w1 != w2 and w1 in word_dic and w2 in word_dic):
+                    # Add cosine to data
+                    dist = utils.eu_to_cosine(model.get_distance(word_dic[w1], word_dic[w2]))
+                    data.append(dist)
+    return data
 
 def get_nelson_rand_dist(t=0.4):
-	data = []
-	w = None
-	while (w not in word_dic):
-		w = random.choice(word_list)
-	print("Computing O(N) for {} nodes | From: {}".format(len(word_list), w))
-	for ow in word_list:
-		if (ow != w and ow in word_dic):
-			dist = abs(1-model.get_distance(word_dic[ow], word_dic[w]))
-			data.append(dist)
-			if (dist < t):
-				print(ow)
-	return data
+    data = []
+    w = None
+    while (w not in word_dic):
+        w = random.choice(word_list)
+    print("Computing O(N) for {} nodes | From: {}".format(len(word_list), w))
+    for ow in word_list:
+        if (ow != w and ow in word_dic):
+            dist = utils.eu_to_cosine(model.get_distance(word_dic[ow], word_dic[w]))
+            data.append(dist)
+    return data
 
 def get_demasking_dist():
-	data = []
-	word_pairs = read_wordpairs(input("Word pairs: "))
-	print("Computing O(N) for {} word pairs".format(len(word_pairs)))
-	dup_filter = set()
-	for w1, w2 in word_pairs:
-		if (w1 in word_dic and w2 in word_dic):
-			pair = (word_dic[w1], word_dic[w2])
-			rev_pair = (pair[1], pair[0])
-			if (rev_pair in dup_filter or pair in dup_filter):
-				continue
-			dup_filter.add(pair)
-	for i1, i2 in dup_filter:
-		data.append(abs(1-model.get_distance(i1, i2)))
-	return data
+    data = []
+    word_pairs = utils.read_wordpairs(input("Word pairs: "))
+    print("Computing O(N) for {} word pairs".format(len(word_pairs)))
+    dup_filter = set()
+    for w1, w2 in word_pairs:
+        if (w1 in word_dic and w2 in word_dic):
+            pair = (word_dic[w1], word_dic[w2])
+            rev_pair = (pair[1], pair[0])
+            if (rev_pair in dup_filter or pair in dup_filter):
+                continue
+            dup_filter.add(pair)
+    for i1, i2 in dup_filter:
+        dist = utils.eu_to_cosine(model.get_distance(i1, i2))
+        data.append(dist)
+    return data
 
 def log_data(data):
-	fname = input("Write log: ")
-	with open(fname, 'w+') as fout:
-		json.dump(data, fout)
+    fname = input("Write log: ")
+    with open(fname, 'w+') as fout:
+        json.dump(data, fout)
 
 # Generate data to plot
-data = get_nelson_dist()
+# data = get_nelson_dist()
 # data = get_demasking_dist()
-# data = get_nelson_rand_dist()
+data = get_nelson_rand_dist()
 print("Generated {} pairs".format(len(data)))
 #log_data(data)
 

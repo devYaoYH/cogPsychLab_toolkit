@@ -146,15 +146,17 @@ def cosine_filter_wrapper(source, args):
     return cosine_filter(source, unwrapped_args['min_edges'], unwrapped_args['cutoff'], unwrapped_args['k'])
 
 def cosine_filter(source, min_edges=1, cutoff=0.1, k=10):
-    li = sorted([(abs(1-model.get_distance(source, t)), t) for t in model.get_nns_by_item(source, k)], key=lambda x: x[0])[:-1]
+    li = sorted([(utils.eu_to_cosine(model.get_distance(source, t)), t) for t in model.get_nns_by_item(source, k)], key=lambda x: x[0])[:-1]
     # print("{}\nlargest_cosine: {}".format(li, li[-1][0]))
     while (li[-1][0] < cutoff):
         k *= 2
-        li = sorted([(abs(1-model.get_distance(source, t)), t) for t in model.get_nns_by_item(source, k)], key=lambda x: x[0])[:-1]
+        li = sorted([(utils.eu_to_cosine(model.get_distance(source, t)), t) for t in model.get_nns_by_item(source, k)], key=lambda x: x[0])[:-1]
     # print("{}: [{}]".format(source, len(li)), file=sys.stderr)
     ret_nodes = [(t, v) for v, t in li[:min_edges]]
     for value, target in li[min_edges:]:
         if (value > cutoff):
+            if (len(ret_nodes) == min_edges and ret_nodes[0][1] > cutoff):
+                print("{},{}".format(source, ",".join(["{},{}".format(r[0], r[1]) for r in ret_nodes])))
             return ret_nodes
         ret_nodes.append((target, value))
     return ret_nodes
