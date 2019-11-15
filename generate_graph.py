@@ -132,7 +132,7 @@ def write_all(graph, fname):
 def cosine_filter_wrapper(source, args):
     unwrapped_args = {
         'min_edges': 1,
-        'cutoff': 0.1,
+        'cutoff': 0.75,
         'k': 10
     }
     args_format = {
@@ -145,18 +145,29 @@ def cosine_filter_wrapper(source, args):
             unwrapped_args[key] = args_format[key](args[key])
     return cosine_filter(source, unwrapped_args['min_edges'], unwrapped_args['cutoff'], unwrapped_args['k'])
 
-def cosine_filter(source, min_edges=1, cutoff=0.1, k=10):
-    li = sorted([(utils.eu_to_cosine(model.get_distance(source, t)), t) for t in model.get_nns_by_item(source, k)], key=lambda x: x[0])[:-1]
+def cosine_filter(source, min_edges=1, cutoff=0.8, k=10):
+    li = sorted([(utils.eu_to_cosine(model.get_distance(source, t)), t) for t in model.get_nns_by_item(source, k)], key=lambda x: x[0], reverse=True)
     # print("{}\nlargest_cosine: {}".format(li, li[-1][0]))
-    while (li[-1][0] < cutoff):
+    while (li[-1][0] > cutoff):
         k *= 2
-        li = sorted([(utils.eu_to_cosine(model.get_distance(source, t)), t) for t in model.get_nns_by_item(source, k)], key=lambda x: x[0])[:-1]
+        li = sorted([(utils.eu_to_cosine(model.get_distance(source, t)), t) for t in model.get_nns_by_item(source, k)], key=lambda x: x[0], reverse=True)
     # print("{}: [{}]".format(source, len(li)), file=sys.stderr)
-    ret_nodes = [(t, v) for v, t in li[:min_edges]]
-    for value, target in li[min_edges:]:
-        if (value > cutoff):
-            if (len(ret_nodes) == min_edges and ret_nodes[0][1] > cutoff):
-                print("{},{}".format(source, ",".join(["{},{}".format(r[0], r[1]) for r in ret_nodes])))
+    ret_nodes = []
+    s_counter = 0
+    for v, t in li:
+        s_counter += 1
+        if (t == source):
+            continue
+        if (len(ret_nodes) < min_edges):
+            ret_nodes.append((t, v))
+        else:
+            break
+    for value, target in li[s_counter:]:
+        if (target == source):
+            continue
+        if (value < cutoff):
+            # if (len(ret_nodes) == min_edges and ret_nodes[0][1] > cutoff):
+            #     print("{},{}".format(source, ",".join(["{},{}".format(r[0], r[1]) for r in ret_nodes])))
             return ret_nodes
         ret_nodes.append((target, value))
     return ret_nodes

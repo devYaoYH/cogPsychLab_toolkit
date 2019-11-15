@@ -177,7 +177,7 @@ def average_pathlength(graph, graph_word_list, k=100):
             p_len_tot += cur_len
         else:
             tot_num -= 1
-    return p_len_tot/tot_num
+    return p_len_tot/tot_num if tot_num > 0 else 9999999
 
 def analyze_graph(graph, graph_word_list):
     # Get global average clustering coeff

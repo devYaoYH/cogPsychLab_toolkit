@@ -6,6 +6,7 @@ import time
 import numpy as np
 
 def plot_rt_path(rt_data):
+    rt_data = rt_data.replace('\\', '/')
     columns = dict()
     with open(rt_data, "r") as fin:
         network_lengths = dict()

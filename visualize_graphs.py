@@ -41,8 +41,6 @@ for name, graph in graphs.items():
 	cx = graph[1]['avg_connectivity']
 	cy = graph[1]['avg_pathlength']
 	cz = graph[0][0]
-	if (cx > 25):
-		continue
 	x.append(cx)
 	y.append(cy)
 	z.append(cz)

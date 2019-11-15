@@ -9,6 +9,7 @@ import numpy as np
 # Take mean of all subjects responses
 # Compare to network path lengths
 def parse_rt_path(rt_data, path_length):
+    rt_data = rt_data.replace('\\', '/')
     columns = dict()
     with open(rt_data, "r") as fin:
         word_pairs = dict()
@@ -34,9 +35,9 @@ def parse_rt_path(rt_data, path_length):
     fin.close()
 
     # Process Mean RT for all subjects
-    rt_fname = rt_data.split('\\')[-1].split('.')[0]
-    path_fname = path_length.split('\\')[-1].split('.')[0]
-    output_fname = '\\'.join(path_length.split('\\')[:-1]) + "\\" + rt_fname + "_" + path_fname + ".csv"
+    rt_fname = rt_data.split('/')[-1].split('.')[0]
+    path_fname = path_length.split('/')[-1].split('.')[0]
+    output_fname = '/'.join(path_length.split('/')[:-1]) + "/" + rt_fname + "_" + path_fname + ".csv"
     with open(output_fname, "w+") as fout:
         for key, value in word_pairs.items():
             word_pairs[key] = float(value[1]/value[0])
