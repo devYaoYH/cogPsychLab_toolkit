@@ -2,6 +2,7 @@ import utils
 import sys
 import time
 import math
+import pandas as pd
 
 EPSILON = 0.0000000001
 
@@ -27,8 +28,9 @@ def filter_outliers(data, k=0, bounds=[-1, 1]):
     return ret_d
 
 def individual_RT_zScore():
+    # dataset = pd.read_csv(input("Regression data: "))
     data = utils.load_data(input("Raw RT file: "), expt=4, d_filter=[int, utils.sanitize_lower, utils.sanitize_lower, int])
-    data = filter_outliers(data, k=3, bounds=[700, 5000])
+    data = filter_outliers(data, k=3, bounds=[250, 7000])
     subject_data = dict()
     for d in data:
         if (d[0] not in subject_data):
@@ -63,6 +65,16 @@ def item_level_mean():
         out_data.append([k[1], k[0], wp_means[k]])
     utils.write_data(input("Output File: "), sorted(out_data))
 
-if (__name__ == "__main__"):
+def combine_data():
+    utils.write_data(input("Output File: "), utils.join_data([input("file 1: "), input("file 2: ")], expt=[3, 14], 
+        d_filter=[[utils.sanitize_lower, utils.sanitize_lower, float], [utils.sanitize_lower, utils.sanitize_lower, float, float, float, int, int, int, int, int, int, int, int, int]]))
+
+def combine_regression_data():
     utils.write_data(input("Output File: "), utils.join_data([input("file 1: "), input("file 2: ")], expt=[5, 3], 
         d_filter=[[utils.sanitize_lower, utils.sanitize_lower, float, float, float], [utils.sanitize_lower, utils.sanitize_lower, float]]))
+
+if (__name__ == "__main__"):
+    # individual_RT_zScore()
+    # item_level_mean()
+    # combine_data()
+    print("Hello!")
