@@ -1,0 +1,449 @@
+Covariates:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.131
+Model:                            OLS   Adj. R-squared:                  0.122
+Method:                 Least Squares   F-statistic:                     15.47
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           8.49e-12
+Time:                        23:15:47   Log-Likelihood:                -276.27
+No. Observations:                 417   AIC:                             562.5
+Df Residuals:                     412   BIC:                             582.7
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.0104      0.023     -0.450      0.653      -0.056       0.035
+mean_len_c      0.0323      0.019      1.712      0.088      -0.005       0.069
+mean_logf_c    -0.0016      0.023     -0.072      0.943      -0.047       0.043
+mean_ldtz_c     0.7521      0.174      4.317      0.000       0.410       1.095
+mean_conc_c    -0.0610      0.030     -2.010      0.045      -0.121      -0.001
+==============================================================================
+Omnibus:                       23.647   Durbin-Watson:                   2.000
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               26.059
+Skew:                           0.596   Prob(JB):                     2.19e-06
+Kurtosis:                       3.284   Cond. No.                         11.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Control | Word2vec Cosines
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.277
+Model:                            OLS   Adj. R-squared:                  0.268
+Method:                 Least Squares   F-statistic:                     31.52
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           3.55e-27
+Time:                        23:15:47   Log-Likelihood:                -237.76
+No. Observations:                 417   AIC:                             487.5
+Df Residuals:                     411   BIC:                             511.7
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const              0.1994      0.031      6.391      0.000       0.138       0.261
+word2veccosine    -1.3082      0.143     -9.131      0.000      -1.590      -1.027
+mean_len_c         0.0361      0.017      2.095      0.037       0.002       0.070
+mean_logf_c       -0.0082      0.021     -0.391      0.696      -0.049       0.033
+mean_ldtz_c        0.6860      0.159      4.309      0.000       0.373       0.999
+mean_conc_c       -0.0427      0.028     -1.536      0.125      -0.097       0.012
+==============================================================================
+Omnibus:                       25.477   Durbin-Watson:                   1.894
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               28.798
+Skew:                           0.586   Prob(JB):                     5.58e-07
+Kurtosis:                       3.534   Cond. No.                         12.0
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Control | LSA
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.250
+Model:                            OLS   Adj. R-squared:                  0.241
+Method:                 Least Squares   F-statistic:                     27.35
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           6.62e-24
+Time:                        23:15:47   Log-Likelihood:                -245.56
+No. Observations:                 417   AIC:                             503.1
+Df Residuals:                     411   BIC:                             527.3
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.1648      0.031      5.394      0.000       0.105       0.225
+LSA            -1.1939      0.148     -8.077      0.000      -1.484      -0.903
+mean_len_c      0.0439      0.018      2.496      0.013       0.009       0.078
+mean_logf_c    -0.0006      0.021     -0.030      0.976      -0.043       0.041
+mean_ldtz_c     0.5592      0.164      3.414      0.001       0.237       0.881
+mean_conc_c    -0.0605      0.028     -2.143      0.033      -0.116      -0.005
+==============================================================================
+Omnibus:                       33.024   Durbin-Watson:                   1.937
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               39.176
+Skew:                           0.683   Prob(JB):                     3.11e-09
+Kurtosis:                       3.625   Cond. No.                         12.5
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Control | Undirected
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.218
+Model:                            OLS   Adj. R-squared:                  0.209
+Method:                 Least Squares   F-statistic:                     22.92
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           2.62e-20
+Time:                        23:15:47   Log-Likelihood:                -254.16
+No. Observations:                 417   AIC:                             520.3
+Df Residuals:                     411   BIC:                             544.5
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.4953      0.075     -6.621      0.000      -0.642      -0.348
+mean_len_c      0.0445      0.018      2.472      0.014       0.009       0.080
+mean_logf_c     0.0057      0.022      0.261      0.794      -0.037       0.049
+mean_ldtz_c     0.5899      0.167      3.530      0.000       0.261       0.918
+mean_conc_c    -0.0547      0.029     -1.898      0.058      -0.111       0.002
+Undirected      0.1952      0.029      6.781      0.000       0.139       0.252
+==============================================================================
+Omnibus:                       33.791   Durbin-Watson:                   1.905
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               39.948
+Skew:                           0.703   Prob(JB):                     2.11e-09
+Kurtosis:                       3.566   Cond. No.                         21.3
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Control | newDirected
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.257
+Model:                            OLS   Adj. R-squared:                  0.248
+Method:                 Least Squares   F-statistic:                     28.42
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           9.36e-25
+Time:                        23:15:47   Log-Likelihood:                -243.53
+No. Observations:                 417   AIC:                             499.1
+Df Residuals:                     411   BIC:                             523.3
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.4958      0.062     -8.012      0.000      -0.617      -0.374
+mean_len_c      0.0409      0.017      2.338      0.020       0.007       0.075
+mean_logf_c     0.0064      0.021      0.302      0.763      -0.035       0.048
+mean_ldtz_c     0.5840      0.162      3.594      0.000       0.265       0.903
+mean_conc_c    -0.0415      0.028     -1.471      0.142      -0.097       0.014
+newdirected     0.1345      0.016      8.360      0.000       0.103       0.166
+==============================================================================
+Omnibus:                       26.147   Durbin-Watson:                   1.948
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               29.395
+Skew:                           0.608   Prob(JB):                     4.14e-07
+Kurtosis:                       3.459   Cond. No.                         30.3
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Control | pathlength (ACN?)
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.179
+Model:                            OLS   Adj. R-squared:                  0.169
+Method:                 Least Squares   F-statistic:                     17.98
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           3.92e-16
+Time:                        23:15:47   Log-Likelihood:                -264.20
+No. Observations:                 417   AIC:                             540.4
+Df Residuals:                     411   BIC:                             564.6
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.1347      0.034     -3.995      0.000      -0.201      -0.068
+mean_len_c      0.0389      0.018      2.114      0.035       0.003       0.075
+mean_logf_c     0.0050      0.022      0.224      0.823      -0.039       0.049
+mean_ldtz_c     0.7428      0.169      4.383      0.000       0.410       1.076
+mean_conc_c    -0.0533      0.030     -1.803      0.072      -0.111       0.005
+pathlength      0.0240      0.005      4.949      0.000       0.014       0.034
+==============================================================================
+Omnibus:                       28.998   Durbin-Watson:                   1.983
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               33.157
+Skew:                           0.649   Prob(JB):                     6.31e-08
+Kurtosis:                       3.474   Cond. No.                         52.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Control | UPMFG_Cat
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.144
+Model:                            OLS   Adj. R-squared:                  0.133
+Method:                 Least Squares   F-statistic:                     13.79
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           1.84e-12
+Time:                        23:15:47   Log-Likelihood:                -273.11
+No. Observations:                 417   AIC:                             558.2
+Df Residuals:                     411   BIC:                             582.4
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.1359      0.055     -2.467      0.014      -0.244      -0.028
+mean_len_c      0.0322      0.019      1.718      0.087      -0.005       0.069
+mean_logf_c    -0.0037      0.023     -0.163      0.871      -0.049       0.041
+mean_ldtz_c     0.7464      0.173      4.311      0.000       0.406       1.087
+mean_conc_c    -0.0584      0.030     -1.935      0.054      -0.118       0.001
+UPMFG_Cat       0.0410      0.016      2.507      0.013       0.009       0.073
+==============================================================================
+Omnibus:                       27.447   Durbin-Watson:                   1.994
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               31.067
+Skew:                           0.629   Prob(JB):                     1.79e-07
+Kurtosis:                       3.453   Cond. No.                         26.4
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Cosine Netowrks | Cosine Cutoff connect edges >0.28 :
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.271
+Model:                            OLS   Adj. R-squared:                  0.262
+Method:                 Least Squares   F-statistic:                     30.50
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           2.19e-26
+Time:                        23:15:47   Log-Likelihood:                -239.64
+No. Observations:                 417   AIC:                             491.3
+Df Residuals:                     411   BIC:                             515.5
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.5796      0.067     -8.589      0.000      -0.712      -0.447
+mean_len_c      0.0411      0.017      2.372      0.018       0.007       0.075
+mean_logf_c    -0.0061      0.021     -0.288      0.773      -0.047       0.035
+mean_ldtz_c     0.6552      0.160      4.092      0.000       0.340       0.970
+mean_conc_c    -0.0368      0.028     -1.316      0.189      -0.092       0.018
+path_28         0.2445      0.028      8.885      0.000       0.190       0.299
+==============================================================================
+Omnibus:                       25.382   Durbin-Watson:                   1.979
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               28.672
+Skew:                           0.585   Prob(JB):                     5.94e-07
+Kurtosis:                       3.532   Cond. No.                         20.0
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Cosine Netowrks | Cosine Cutoff connect edges >0.29 :
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.252
+Model:                            OLS   Adj. R-squared:                  0.243
+Method:                 Least Squares   F-statistic:                     27.65
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           3.84e-24
+Time:                        23:15:47   Log-Likelihood:                -244.99
+No. Observations:                 417   AIC:                             502.0
+Df Residuals:                     411   BIC:                             526.2
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.5217      0.066     -7.873      0.000      -0.652      -0.391
+mean_len_c      0.0406      0.018      2.314      0.021       0.006       0.075
+mean_logf_c    -0.0162      0.021     -0.757      0.450      -0.058       0.026
+mean_ldtz_c     0.6447      0.162      3.971      0.000       0.326       0.964
+mean_conc_c    -0.0478      0.028     -1.693      0.091      -0.103       0.008
+path_29         0.2124      0.026      8.156      0.000       0.161       0.264
+==============================================================================
+Omnibus:                       27.405   Durbin-Watson:                   1.973
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               31.209
+Skew:                           0.618   Prob(JB):                     1.67e-07
+Kurtosis:                       3.520   Cond. No.                         20.7
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Cosine Netowrks | Cosine Cutoff connect edges >0.3 :
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.255
+Model:                            OLS   Adj. R-squared:                  0.246
+Method:                 Least Squares   F-statistic:                     28.13
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           1.59e-24
+Time:                        23:15:47   Log-Likelihood:                -244.08
+No. Observations:                 417   AIC:                             500.2
+Df Residuals:                     411   BIC:                             524.3
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.5277      0.066     -7.993      0.000      -0.658      -0.398
+mean_len_c      0.0365      0.017      2.086      0.038       0.002       0.071
+mean_logf_c    -0.0196      0.021     -0.918      0.359      -0.062       0.022
+mean_ldtz_c     0.6327      0.162      3.903      0.000       0.314       0.951
+mean_conc_c    -0.0536      0.028     -1.904      0.058      -0.109       0.002
+path_30         0.2069      0.025      8.284      0.000       0.158       0.256
+==============================================================================
+Omnibus:                       28.705   Durbin-Watson:                   1.957
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               33.167
+Skew:                           0.627   Prob(JB):                     6.28e-08
+Kurtosis:                       3.580   Cond. No.                         21.4
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Cosine Netowrks | Cosine Cutoff connect edges >0.31 :
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.248
+Model:                            OLS   Adj. R-squared:                  0.239
+Method:                 Least Squares   F-statistic:                     27.16
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           9.32e-24
+Time:                        23:15:47   Log-Likelihood:                -245.91
+No. Observations:                 417   AIC:                             503.8
+Df Residuals:                     411   BIC:                             528.0
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.4949      0.064     -7.722      0.000      -0.621      -0.369
+mean_len_c      0.0355      0.018      2.021      0.044       0.001       0.070
+mean_logf_c    -0.0214      0.021     -0.993      0.321      -0.064       0.021
+mean_ldtz_c     0.6394      0.163      3.928      0.000       0.319       0.959
+mean_conc_c    -0.0520      0.028     -1.838      0.067      -0.108       0.004
+path_31         0.1830      0.023      8.027      0.000       0.138       0.228
+==============================================================================
+Omnibus:                       27.310   Durbin-Watson:                   1.924
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               31.598
+Skew:                           0.599   Prob(JB):                     1.38e-07
+Kurtosis:                       3.619   Cond. No.                         22.6
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Cosine Netowrks | Cosine Cutoff connect edges >0.32 :
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.238
+Model:                            OLS   Adj. R-squared:                  0.228
+Method:                 Least Squares   F-statistic:                     25.61
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           1.66e-22
+Time:                        23:15:47   Log-Likelihood:                -248.90
+No. Observations:                 417   AIC:                             509.8
+Df Residuals:                     411   BIC:                             534.0
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.4493      0.062     -7.278      0.000      -0.571      -0.328
+mean_len_c      0.0354      0.018      2.004      0.046       0.001       0.070
+mean_logf_c    -0.0234      0.022     -1.080      0.281      -0.066       0.019
+mean_ldtz_c     0.6452      0.164      3.936      0.000       0.323       0.968
+mean_conc_c    -0.0493      0.028     -1.729      0.085      -0.105       0.007
+path_32         0.1566      0.021      7.593      0.000       0.116       0.197
+==============================================================================
+Omnibus:                       27.495   Durbin-Watson:                   1.948
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               31.991
+Skew:                           0.598   Prob(JB):                     1.13e-07
+Kurtosis:                       3.642   Cond. No.                         23.9
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Cosine Netowrks | Cosine Cutoff connect edges >0.33 :
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.243
+Model:                            OLS   Adj. R-squared:                  0.234
+Method:                 Least Squares   F-statistic:                     26.45
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           3.49e-23
+Time:                        23:15:47   Log-Likelihood:                -247.28
+No. Observations:                 417   AIC:                             506.6
+Df Residuals:                     411   BIC:                             530.8
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.4464      0.060     -7.475      0.000      -0.564      -0.329
+mean_len_c      0.0358      0.018      2.032      0.043       0.001       0.070
+mean_logf_c    -0.0227      0.022     -1.051      0.294      -0.065       0.020
+mean_ldtz_c     0.6289      0.163      3.847      0.000       0.308       0.950
+mean_conc_c    -0.0445      0.028     -1.565      0.118      -0.100       0.011
+path_33         0.1487      0.019      7.830      0.000       0.111       0.186
+==============================================================================
+Omnibus:                       26.846   Durbin-Watson:                   1.961
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               31.633
+Skew:                           0.577   Prob(JB):                     1.35e-07
+Kurtosis:                       3.700   Cond. No.                         25.0
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Cosine Netowrks | Cosine Cutoff connect edges >0.34 :
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.241
+Model:                            OLS   Adj. R-squared:                  0.232
+Method:                 Least Squares   F-statistic:                     26.10
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           6.68e-23
+Time:                        23:15:47   Log-Likelihood:                -247.95
+No. Observations:                 417   AIC:                             507.9
+Df Residuals:                     411   BIC:                             532.1
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.4377      0.059     -7.376      0.000      -0.554      -0.321
+mean_len_c      0.0322      0.018      1.825      0.069      -0.002       0.067
+mean_logf_c    -0.0215      0.022     -0.997      0.320      -0.064       0.021
+mean_ldtz_c     0.6603      0.163      4.041      0.000       0.339       0.981
+mean_conc_c    -0.0448      0.028     -1.573      0.116      -0.101       0.011
+path_34         0.1394      0.018      7.732      0.000       0.104       0.175
+==============================================================================
+Omnibus:                       27.095   Durbin-Watson:                   1.959
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               32.039
+Skew:                           0.579   Prob(JB):                     1.10e-07
+Kurtosis:                       3.710   Cond. No.                         26.0
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Cosine Netowrks | Cosine Cutoff connect edges >0.35 :
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.242
+Model:                            OLS   Adj. R-squared:                  0.233
+Method:                 Least Squares   F-statistic:                     26.28
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           4.74e-23
+Time:                        23:15:47   Log-Likelihood:                -247.60
+No. Observations:                 417   AIC:                             507.2
+Df Residuals:                     411   BIC:                             531.4
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.4311      0.058     -7.406      0.000      -0.546      -0.317
+mean_len_c      0.0373      0.018      2.112      0.035       0.003       0.072
+mean_logf_c    -0.0205      0.022     -0.948      0.344      -0.063       0.022
+mean_ldtz_c     0.6461      0.163      3.954      0.000       0.325       0.967
+mean_conc_c    -0.0420      0.028     -1.477      0.140      -0.098       0.014
+path_35         0.1296      0.017      7.784      0.000       0.097       0.162
+==============================================================================
+Omnibus:                       26.659   Durbin-Watson:                   1.957
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               31.829
+Skew:                           0.565   Prob(JB):                     1.23e-07
+Kurtosis:                       3.744   Cond. No.                         27.5
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

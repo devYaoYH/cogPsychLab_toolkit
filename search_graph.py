@@ -152,6 +152,7 @@ debug_time("Loading word list...", word_t, time.time())
 ##############
 # Load graph from file
 graph = dict()  # Stores graph as adjacency lists
+graph_costs = dict()
 graph_t = time.time()
 print("Loading graph from file: " + GRAPH_FILE, file=sys.stderr)
 with open(GRAPH_FILE, 'r') as fin:
@@ -159,12 +160,20 @@ with open(GRAPH_FILE, 'r') as fin:
         line_data = line.strip().split(',')
         source = line_data[0].lower()
         destination = line_data[1].lower()
+        cost = None
+        if (len(line_data) > 2):
+            cost = float(line_data[2])
         graph_word_list.add(source)
         graph_word_list.add(destination)
         try:
             graph[source].add(destination)
+            if (cost is not None):
+                graph_costs[source][destination] = cost
         except KeyError:
             graph[source] = set([destination])
+            if (cost is not None):
+                graph_costs[source] = dict()
+                graph_costs[source][destination] = cost
         if (not is_directed):
             try:
                 graph[destination].add(source)

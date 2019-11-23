@@ -49,7 +49,7 @@ def write_raw(graph, fname):
     output_fname = fname + ".graph"
     with open(fname + ".graph", "w+") as fout:
         for source, target, value in graph['edges']:
-            fout.write(f"{graph['nodes'][source]},{graph['nodes'][target]}\n")
+            fout.write(f"{graph['nodes'][source]},{graph['nodes'][target]},{value}\n")
     return output_fname
 
 def debug_json(graph, fname):

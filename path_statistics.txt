@@ -1,0 +1,79 @@
+Network [Undirected]
+Path Length: 1          | Num: 42       | Mean zRT: -0.36623    | Mean word2vec: 0.38469        | Mean LSA: 0.36762
+Path Length: 2          | Num: 165      | Mean zRT: -0.10323    | Mean word2vec: 0.18895        | Mean LSA: 0.17055
+Path Length: 3          | Num: 177      | Mean zRT: 0.09008     | Mean word2vec: 0.09705        | Mean LSA: 0.09367
+Path Length: 4          | Num: 33       | Mean zRT: 0.33667     | Mean word2vec: 0.07148        | Mean LSA: 0.03667
+Network [newdirected]
+Path Length: 1          | Num: 27       | Mean zRT: -0.42896    | Mean word2vec: 0.41126        | Mean LSA: 0.40704
+Path Length: 2          | Num: 68       | Mean zRT: -0.27900    | Mean word2vec: 0.25439        | Mean LSA: 0.21500
+Path Length: 3          | Num: 88       | Mean zRT: -0.10681    | Mean word2vec: 0.14204        | Mean LSA: 0.12705
+Path Length: 4          | Num: 131      | Mean zRT: 0.08624     | Mean word2vec: 0.12264        | Mean LSA: 0.12214
+Path Length: 5          | Num: 73       | Mean zRT: 0.17842     | Mean word2vec: 0.07866        | Mean LSA: 0.07699
+Path Length: 6          | Num: 25       | Mean zRT: 0.29371     | Mean word2vec: 0.14746        | Mean LSA: 0.09600
+Path Length: 7          | Num: 3        | Mean zRT: 0.69516     | Mean word2vec: 0.09483        | Mean LSA: 0.06000
+Path Length: 8          | Num: 2        | Mean zRT: 0.42178     | Mean word2vec: 0.09426        | Mean LSA: 0.19000
+Network [pathlength]
+Path Length: 1          | Num: 71       | Mean zRT: -0.37788    | Mean word2vec: 0.38382        | Mean LSA: 0.33620
+Path Length: 2          | Num: 67       | Mean zRT: -0.10893    | Mean word2vec: 0.18912        | Mean LSA: 0.14015
+Path Length: 3          | Num: 66       | Mean zRT: 0.11573     | Mean word2vec: 0.11556        | Mean LSA: 0.11091
+Path Length: 4          | Num: 73       | Mean zRT: 0.07046     | Mean word2vec: 0.12607        | Mean LSA: 0.12438
+Path Length: 6          | Num: 71       | Mean zRT: 0.07545     | Mean word2vec: 0.08559        | Mean LSA: 0.10028
+Path Length: 15         | Num: 69       | Mean zRT: 0.15405     | Mean word2vec: 0.05855        | Mean LSA: 0.06652
+Network [UPMFG_Cat]
+Path Length: 1          | Num: 77       | Mean zRT: -0.17825    | Mean word2vec: 0.27438        | Mean LSA: 0.20974
+Path Length: 2          | Num: 87       | Mean zRT: 0.00357     | Mean word2vec: 0.14467        | Mean LSA: 0.14195
+Path Length: 3          | Num: 68       | Mean zRT: 0.09136     | Mean word2vec: 0.09938        | Mean LSA: 0.06868
+Path Length: 4          | Num: 102      | Mean zRT: -0.03658    | Mean word2vec: 0.13666        | Mean LSA: 0.15804
+Path Length: 5          | Num: 83       | Mean zRT: 0.06715     | Mean word2vec: 0.15011        | Mean LSA: 0.14554
+Network [path_28]
+Path Length: 1          | Num: 66       | Mean zRT: -0.37392    | Mean word2vec: 0.40082        | Mean LSA: 0.33667
+Path Length: 2          | Num: 162      | Mean zRT: -0.08282    | Mean word2vec: 0.18502        | Mean LSA: 0.15173
+Path Length: 3          | Num: 175      | Mean zRT: 0.15585     | Mean word2vec: 0.05565        | Mean LSA: 0.07994
+Path Length: 4          | Num: 14       | Mean zRT: 0.39010     | Mean word2vec: 0.05032        | Mean LSA: 0.04143
+Network [path_29]
+Path Length: 1          | Num: 62       | Mean zRT: -0.37549    | Mean word2vec: 0.40837        | Mean LSA: 0.33419
+Path Length: 2          | Num: 155      | Mean zRT: -0.07785    | Mean word2vec: 0.19042        | Mean LSA: 0.16277
+Path Length: 3          | Num: 168      | Mean zRT: 0.13887     | Mean word2vec: 0.06465        | Mean LSA: 0.08238
+Path Length: 4          | Num: 32       | Mean zRT: 0.20803     | Mean word2vec: 0.03669        | Mean LSA: 0.04938
+Network [path_30]
+Path Length: 1          | Num: 58       | Mean zRT: -0.39043    | Mean word2vec: 0.41620        | Mean LSA: 0.33517
+Path Length: 2          | Num: 138      | Mean zRT: -0.10819    | Mean word2vec: 0.20496        | Mean LSA: 0.17413
+Path Length: 3          | Num: 175      | Mean zRT: 0.13488     | Mean word2vec: 0.06983        | Mean LSA: 0.08880
+Path Length: 4          | Num: 46       | Mean zRT: 0.18719     | Mean word2vec: 0.04839        | Mean LSA: 0.05130
+Network [path_31]
+Path Length: 1          | Num: 54       | Mean zRT: -0.39188    | Mean word2vec: 0.42476        | Mean LSA: 0.35074
+Path Length: 2          | Num: 123      | Mean zRT: -0.11506    | Mean word2vec: 0.21632        | Mean LSA: 0.17593
+Path Length: 3          | Num: 160      | Mean zRT: 0.07896     | Mean word2vec: 0.08429        | Mean LSA: 0.09962
+Path Length: 4          | Num: 76       | Mean zRT: 0.24439     | Mean word2vec: 0.04669        | Mean LSA: 0.05882
+Path Length: 5          | Num: 4        | Mean zRT: -0.31340    | Mean word2vec: 0.07266        | Mean LSA: 0.09500
+Network [path_32]
+Path Length: 1          | Num: 50       | Mean zRT: -0.43100    | Mean word2vec: 0.43337        | Mean LSA: 0.36600
+Path Length: 2          | Num: 115      | Mean zRT: -0.10175    | Mean word2vec: 0.22496        | Mean LSA: 0.17270
+Path Length: 3          | Num: 138      | Mean zRT: 0.03814     | Mean word2vec: 0.09447        | Mean LSA: 0.10312
+Path Length: 4          | Num: 97       | Mean zRT: 0.24730     | Mean word2vec: 0.05872        | Mean LSA: 0.07825
+Path Length: 5          | Num: 15       | Mean zRT: -0.06098    | Mean word2vec: 0.04044        | Mean LSA: 0.08200
+Path Length: 6          | Num: 2        | Mean zRT: -0.22254    | Mean word2vec: -0.00410       | Mean LSA: 0.08000
+Network [path_33]
+Path Length: 1          | Num: 44       | Mean zRT: -0.50453    | Mean word2vec: 0.44815        | Mean LSA: 0.36727
+Path Length: 2          | Num: 112      | Mean zRT: -0.11065    | Mean word2vec: 0.23806        | Mean LSA: 0.18589
+Path Length: 3          | Num: 130      | Mean zRT: 0.01853     | Mean word2vec: 0.10156        | Mean LSA: 0.10400
+Path Length: 4          | Num: 96       | Mean zRT: 0.24511     | Mean word2vec: 0.05469        | Mean LSA: 0.07437
+Path Length: 5          | Num: 31       | Mean zRT: 0.14057     | Mean word2vec: 0.06541        | Mean LSA: 0.10871
+Path Length: 6          | Num: 2        | Mean zRT: -0.30993    | Mean word2vec: 0.00818        | Mean LSA: 0.10000
+Path Length: 7          | Num: 2        | Mean zRT: -0.22254    | Mean word2vec: -0.00410       | Mean LSA: 0.08000
+Network [path_34]
+Path Length: 1          | Num: 40       | Mean zRT: -0.51227    | Mean word2vec: 0.45939        | Mean LSA: 0.37550
+Path Length: 2          | Num: 106      | Mean zRT: -0.14890    | Mean word2vec: 0.25106        | Mean LSA: 0.19566
+Path Length: 3          | Num: 114      | Mean zRT: 0.03685     | Mean word2vec: 0.10770        | Mean LSA: 0.11000
+Path Length: 4          | Num: 111      | Mean zRT: 0.18580     | Mean word2vec: 0.06544        | Mean LSA: 0.07793
+Path Length: 5          | Num: 37       | Mean zRT: 0.19765     | Mean word2vec: 0.05460        | Mean LSA: 0.09541
+Path Length: 6          | Num: 7        | Mean zRT: -0.11113    | Mean word2vec: 0.04684        | Mean LSA: 0.10429
+Path Length: 7          | Num: 2        | Mean zRT: -0.22254    | Mean word2vec: -0.00410       | Mean LSA: 0.08000
+Network [path_35]
+Path Length: 1          | Num: 38       | Mean zRT: -0.50810    | Mean word2vec: 0.46532        | Mean LSA: 0.38158
+Path Length: 2          | Num: 102      | Mean zRT: -0.15237    | Mean word2vec: 0.25599        | Mean LSA: 0.20000
+Path Length: 3          | Num: 82       | Mean zRT: 0.00129     | Mean word2vec: 0.11063        | Mean LSA: 0.09829
+Path Length: 4          | Num: 128      | Mean zRT: 0.15054     | Mean word2vec: 0.08147        | Mean LSA: 0.09828
+Path Length: 5          | Num: 50       | Mean zRT: 0.18494     | Mean word2vec: 0.05490        | Mean LSA: 0.07960
+Path Length: 6          | Num: 15       | Mean zRT: 0.08751     | Mean word2vec: 0.05599        | Mean LSA: 0.11267
+Path Length: 7          | Num: 2        | Mean zRT: -0.22254    | Mean word2vec: -0.00410       | Mean LSA: 0.08000

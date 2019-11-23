@@ -1,0 +1,194 @@
+Covariates:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.131
+Model:                            OLS   Adj. R-squared:                  0.122
+Method:                 Least Squares   F-statistic:                     15.47
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           8.49e-12
+Time:                        23:15:47   Log-Likelihood:                -276.27
+No. Observations:                 417   AIC:                             562.5
+Df Residuals:                     412   BIC:                             582.7
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.0104      0.023     -0.450      0.653      -0.056       0.035
+mean_len_c      0.0323      0.019      1.712      0.088      -0.005       0.069
+mean_logf_c    -0.0016      0.023     -0.072      0.943      -0.047       0.043
+mean_ldtz_c     0.7521      0.174      4.317      0.000       0.410       1.095
+mean_conc_c    -0.0610      0.030     -2.010      0.045      -0.121      -0.001
+==============================================================================
+Omnibus:                       23.647   Durbin-Watson:                   2.000
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               26.059
+Skew:                           0.596   Prob(JB):                     2.19e-06
+Kurtosis:                       3.284   Cond. No.                         11.9
+==============================================================================
+
+Control | Word2vec Cosines
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.277
+Model:                            OLS   Adj. R-squared:                  0.268
+Method:                 Least Squares   F-statistic:                     31.52
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           3.55e-27
+Time:                        23:15:47   Log-Likelihood:                -237.76
+No. Observations:                 417   AIC:                             487.5
+Df Residuals:                     411   BIC:                             511.7
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const              0.1994      0.031      6.391      0.000       0.138       0.261
+word2veccosine    -1.3082      0.143     -9.131      0.000      -1.590      -1.027
+mean_len_c         0.0361      0.017      2.095      0.037       0.002       0.070
+mean_logf_c       -0.0082      0.021     -0.391      0.696      -0.049       0.033
+mean_ldtz_c        0.6860      0.159      4.309      0.000       0.373       0.999
+mean_conc_c       -0.0427      0.028     -1.536      0.125      -0.097       0.012
+==============================================================================
+Omnibus:                       25.477   Durbin-Watson:                   1.894
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               28.798
+Skew:                           0.586   Prob(JB):                     5.58e-07
+Kurtosis:                       3.534   Cond. No.                         12.0
+==============================================================================
+
+Control | LSA
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.250
+Model:                            OLS   Adj. R-squared:                  0.241
+Method:                 Least Squares   F-statistic:                     27.35
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           6.62e-24
+Time:                        23:15:47   Log-Likelihood:                -245.56
+No. Observations:                 417   AIC:                             503.1
+Df Residuals:                     411   BIC:                             527.3
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.1648      0.031      5.394      0.000       0.105       0.225
+LSA            -1.1939      0.148     -8.077      0.000      -1.484      -0.903
+mean_len_c      0.0439      0.018      2.496      0.013       0.009       0.078
+mean_logf_c    -0.0006      0.021     -0.030      0.976      -0.043       0.041
+mean_ldtz_c     0.5592      0.164      3.414      0.001       0.237       0.881
+mean_conc_c    -0.0605      0.028     -2.143      0.033      -0.116      -0.005
+==============================================================================
+Omnibus:                       33.024   Durbin-Watson:                   1.937
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               39.176
+Skew:                           0.683   Prob(JB):                     3.11e-09
+Kurtosis:                       3.625   Cond. No.                         12.5
+==============================================================================
+
+newDirected
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.257
+Model:                            OLS   Adj. R-squared:                  0.248
+Method:                 Least Squares   F-statistic:                     28.42
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           9.36e-25
+Time:                        23:15:47   Log-Likelihood:                -243.53
+No. Observations:                 417   AIC:                             499.1
+Df Residuals:                     411   BIC:                             523.3
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.4958      0.062     -8.012      0.000      -0.617      -0.374
+mean_len_c      0.0409      0.017      2.338      0.020       0.007       0.075
+mean_logf_c     0.0064      0.021      0.302      0.763      -0.035       0.048
+mean_ldtz_c     0.5840      0.162      3.594      0.000       0.265       0.903
+mean_conc_c    -0.0415      0.028     -1.471      0.142      -0.097       0.014
+newdirected     0.1345      0.016      8.360      0.000       0.103       0.166
+==============================================================================
+Omnibus:                       26.147   Durbin-Watson:                   1.948
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               29.395
+Skew:                           0.608   Prob(JB):                     4.14e-07
+Kurtosis:                       3.459   Cond. No.                         30.3
+==============================================================================
+
+word2vec BFS Network 0.28 Cosine
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.271
+Model:                            OLS   Adj. R-squared:                  0.262
+Method:                 Least Squares   F-statistic:                     30.50
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           2.19e-26
+Time:                        23:15:47   Log-Likelihood:                -239.64
+No. Observations:                 417   AIC:                             491.3
+Df Residuals:                     411   BIC:                             515.5
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.5796      0.067     -8.589      0.000      -0.712      -0.447
+mean_len_c      0.0411      0.017      2.372      0.018       0.007       0.075
+mean_logf_c    -0.0061      0.021     -0.288      0.773      -0.047       0.035
+mean_ldtz_c     0.6552      0.160      4.092      0.000       0.340       0.970
+mean_conc_c    -0.0368      0.028     -1.316      0.189      -0.092       0.018
+path_28         0.2445      0.028      8.885      0.000       0.190       0.299
+==============================================================================
+Omnibus:                       25.382   Durbin-Watson:                   1.979
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               28.672
+Skew:                           0.585   Prob(JB):                     5.94e-07
+Kurtosis:                       3.532   Cond. No.                         20.0
+==============================================================================
+
+word2vec BFS Network 0.30 Cosine
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.255
+Model:                            OLS   Adj. R-squared:                  0.246
+Method:                 Least Squares   F-statistic:                     28.13
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           1.59e-24
+Time:                        23:15:47   Log-Likelihood:                -244.08
+No. Observations:                 417   AIC:                             500.2
+Df Residuals:                     411   BIC:                             524.3
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.5277      0.066     -7.993      0.000      -0.658      -0.398
+mean_len_c      0.0365      0.017      2.086      0.038       0.002       0.071
+mean_logf_c    -0.0196      0.021     -0.918      0.359      -0.062       0.022
+mean_ldtz_c     0.6327      0.162      3.903      0.000       0.314       0.951
+mean_conc_c    -0.0536      0.028     -1.904      0.058      -0.109       0.002
+path_30         0.2069      0.025      8.284      0.000       0.158       0.256
+==============================================================================
+Omnibus:                       28.705   Durbin-Watson:                   1.957
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               33.167
+Skew:                           0.627   Prob(JB):                     6.28e-08
+Kurtosis:                       3.580   Cond. No.                         21.4
+==============================================================================
+
+word2vec BFS Network 0.35 Cosine
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         zRTTarget_trim   R-squared:                       0.242
+Model:                            OLS   Adj. R-squared:                  0.233
+Method:                 Least Squares   F-statistic:                     26.28
+Date:                Thu, 21 Nov 2019   Prob (F-statistic):           4.74e-23
+Time:                        23:15:47   Log-Likelihood:                -247.60
+No. Observations:                 417   AIC:                             507.2
+Df Residuals:                     411   BIC:                             531.4
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -0.4311      0.058     -7.406      0.000      -0.546      -0.317
+mean_len_c      0.0373      0.018      2.112      0.035       0.003       0.072
+mean_logf_c    -0.0205      0.022     -0.948      0.344      -0.063       0.022
+mean_ldtz_c     0.6461      0.163      3.954      0.000       0.325       0.967
+mean_conc_c    -0.0420      0.028     -1.477      0.140      -0.098       0.014
+path_35         0.1296      0.017      7.784      0.000       0.097       0.162
+==============================================================================
+Omnibus:                       26.659   Durbin-Watson:                   1.957
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               31.829
+Skew:                           0.565   Prob(JB):                     1.23e-07
+Kurtosis:                       3.744   Cond. No.                         27.5
+==============================================================================
