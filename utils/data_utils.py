@@ -19,6 +19,29 @@ def read_wordpairs(fname, delim=','):
             word_pairs.append((prime, target))
     return word_pairs
 
+def load_graph(fname, delim=',', weighted=False):
+    graph = dict()
+    with open(fname, 'r') as fin:
+        for line in fin:
+            line_contents = line.strip().split(delim)
+            if (weighted and len(line_contents) < 3):
+                print("Error: Insufficient arguments on line:", line)
+                return None
+            if (weighted):
+                prime, target, weight = line_contents
+                weight = float(weight)
+                try:
+                    graph[prime].append((target, weight))
+                except KeyError:
+                    graph[prime] = [(target, weight)]
+            else:
+                prime, target = line_contents
+                try:
+                    graph[prime].append(target)
+                except KeyError:
+                    graph[prime] = [target]
+    return graph
+
 def load_data(fname, delim=',', expt=1, d_filter=None):
     if (d_filter is None):
         d_filter = [None for i in range(expt)]

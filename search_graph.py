@@ -2,6 +2,7 @@ from __future__ import print_function
 import re
 import sys
 import time
+import utils
 try: 
     import queue
 except ImportError:
@@ -134,6 +135,35 @@ def bfs(graph, source, destination):
             q.put((adj, path[:] + [adj]))
     return None
 
+def dijkstra(graph, source, destination, decay=1.1):
+    if (source not in graph_word_list):
+        # print("ERROR word not found in graph: {}".format(source, file=sys.stderr))
+        unrecognized_word_list.add(source)
+        return None
+    if (destination not in graph_word_list):
+        # print("ERROR word not found in graph: {}".format(destination, file=sys.stderr))
+        unrecognized_word_list.add(destination)
+        return None
+    q = queue.PriorityQueue()
+    v = dict()
+    q.put((0, source, [source]))
+    while (not q.empty()):
+        cost, cur, path = q.get()
+        if (cur in v and v[cur] < cost):
+            continue
+        v[cur] = cost
+        if (cur == destination):
+            return (cost, path)
+        for adj, weight in graph[cur]:
+            adj_cost = cost + (1 - weight)*(decay**(len(path)-1))
+            if (adj not in v):
+                v[adj] = adj_cost
+                q.put((adj_cost, adj, path[:] + [adj]))
+            elif (v[adj] > adj_cost):
+                v[adj] = adj_cost
+                q.put((adj_cost, adj, path[:] + [adj]))
+    return None
+
 #######################
 # LOAD WORD PAIR LIST #
 #######################
@@ -155,30 +185,32 @@ graph = dict()  # Stores graph as adjacency lists
 graph_costs = dict()
 graph_t = time.time()
 print("Loading graph from file: " + GRAPH_FILE, file=sys.stderr)
-with open(GRAPH_FILE, 'r') as fin:
-    for line in fin:
-        line_data = line.strip().split(',')
-        source = line_data[0].lower()
-        destination = line_data[1].lower()
-        cost = None
-        if (len(line_data) > 2):
-            cost = float(line_data[2])
-        graph_word_list.add(source)
-        graph_word_list.add(destination)
-        try:
-            graph[source].add(destination)
-            if (cost is not None):
-                graph_costs[source][destination] = cost
-        except KeyError:
-            graph[source] = set([destination])
-            if (cost is not None):
-                graph_costs[source] = dict()
-                graph_costs[source][destination] = cost
-        if (not is_directed):
-            try:
-                graph[destination].add(source)
-            except KeyError:
-                graph[destination] = set([source])
+graph = utils.load_graph(GRAPH_FILE, weighted=True)
+graph_word_list = list(graph.keys())
+# with open(GRAPH_FILE, 'r') as fin:
+#     for line in fin:
+#         line_data = line.strip().split(',')
+#         source = line_data[0].lower()
+#         destination = line_data[1].lower()
+#         cost = None
+#         if (len(line_data) > 2):
+#             cost = float(line_data[2])
+#         graph_word_list.add(source)
+#         graph_word_list.add(destination)
+#         try:
+#             graph[source].add(destination)
+#             if (cost is not None):
+#                 graph_costs[source][destination] = cost
+#         except KeyError:
+#             graph[source] = set([destination])
+#             if (cost is not None):
+#                 graph_costs[source] = dict()
+#                 graph_costs[source][destination] = cost
+#         if (not is_directed):
+#             try:
+#                 graph[destination].add(source)
+#             except KeyError:
+#                 graph[destination] = set([source])
 debug_time("Graph Loaded...", graph_t, time.time())
 
 #########################
@@ -186,13 +218,19 @@ debug_time("Graph Loaded...", graph_t, time.time())
 #########################
 search_t = time.time()
 word_paths = dict()
+path_cost = dict()
 for pair in word_list:
     if (pair[0][0] in alpha_set):
         print("Scanning...[{}]".format(pair[0][0].upper()), file=sys.stderr)
         alpha_set.remove(pair[0][0])
-    word_paths[pair] = bfs(graph, pair[0], pair[1])
+    # word_paths[pair] = bfs(graph, pair[0], pair[1])
+    results = dijkstra(graph, pair[0], pair[1])
+    path_cost[pair], word_paths[pair] = results if results is not None else (None, None)
+    # print(f"Found path {pair}: {path_cost[pair]} | {len(word_paths[pair])} | {word_paths[pair]}")
     if (is_directed):
-        word_paths[(pair[1], pair[0])] = bfs(graph, pair[1], pair[0])
+        # word_paths[(pair[1], pair[0])] = bfs(graph, pair[1], pair[0])
+        results = dijkstra(graph, pair[1], pair[0])
+        path_cost[pair], word_paths[(pair[1], pair[0])] = results if results is not None else (None, None)
 with open(OUTPUT_PATH_ERROR_FILE, 'w+') as fout:
     err_list = sorted(list(unrecognized_word_list))
     for word in err_list:
@@ -201,13 +239,15 @@ with open(OUTPUT_PATH_ERROR_FILE, 'w+') as fout:
 with open(OUTPUT_PATH_FILE, 'w+') as fout:
     for pair in word_list:
         if (word_paths[pair] is not None):
-            fout.write("{},{},{},\"".format(pair[0], pair[1], len(word_paths[pair])-1))
+            # fout.write("{},{},{},\"".format(pair[0], pair[1], len(word_paths[pair])-1))
+            fout.write("{},{},{},\"".format(pair[0], pair[1], path_cost[pair]))
             for node in word_paths[pair][:-1]:
                 fout.write("{},".format(node))
             fout.write("{}".format(word_paths[pair][-1]))
             fout.write('\"')
             if (is_directed):
-                fout.write(",{},\"".format(len(word_paths[(pair[1], pair[0])])-1))
+                # fout.write(",{},\"".format(len(word_paths[(pair[1], pair[0])])-1))
+                fout.write(",{},\"".format(path_cost[(pair[1], pair[0])]))
                 for node in word_paths[(pair[1], pair[0])][:-1]:
                     fout.write("{},".format(node))
                 fout.write("{}".format(word_paths[(pair[1], pair[0])][-1]))
